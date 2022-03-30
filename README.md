@@ -36,15 +36,15 @@ The client will update and maintain the website content.
 
 
 ## Schedule 
-![Schedule](https://ibb.co/0CkCNZV)
+![Schedule](https://i.ibb.co/Yc6c98T/Capture.jpg)
 
 
 ## Resources
 We will be using the information from these 4 main resources:
-https://www.depts.ttu.edu/: This resource has been taken for reference in view to understand the basic concept of LBGTQIA+.
-https://www.wappalyzer.com/: We will be using this website to investigate and learn the technology stacks of existing relevant applications about LGBTQIA+ and apply some of them in our project.
-https://stackoverflow.com/: In situations where we encounter technical problems, we will be using this website as a way to find solutions for our problems. If there are no existing solutions, we will use it as a Q & A platform to post our questions and ask if anyone has answers for them.
-https://www.youtube.com/watch?v=3JluqTojuME: Youtube learning can deliver us more accuracy with the knowledge with the help of it’s visuality, we also can be able to define more tactics in order to enhance the design of the website.
+- https://www.depts.ttu.edu/: This resource has been taken for reference in view to understand the basic concept of LBGTQIA+.
+- https://www.wappalyzer.com/: We will be using this website to investigate and learn the technology stacks of existing relevant applications about LGBTQIA+ and apply some of them in our project.
+- https://stackoverflow.com/: In situations where we encounter technical problems, we will be using this website as a way to find solutions for our problems. If there are no existing solutions, we will use it as a Q & A platform to post our questions and ask if anyone has answers for them.
+- https://www.youtube.com/watch?v=3JluqTojuME: Youtube learning can deliver us more accuracy with the knowledge with the help of it’s visuality, we also can be able to define more tactics in order to enhance the design of the website.
 
 ## Communications 
 Our group communicates primarily through Discord. Our group leader made a group in Discord to announce important information as well as to answer any of us who have questions. We also host weekly meetings through the Zoom platform. In addition, we do our meetings with Ten Oaks every two weeks to discuss the progress of the project.
