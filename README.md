@@ -55,19 +55,20 @@ Risk is the probability of any adverse event occurring. All projects are subject
 Expansion of the project: If the project’s source code is not well organized and maintained, project scaling may not only lead to lost time and additional costs, but also small chance of even project failure
 
 Security risk: Since we are only a college group and we have not learned a lot about cybersecurity, our website may have some security holes that hackers can take advantage of. If this happens, organization information will be exposed and used by people who attack our website. This is the last thing we want, so we will try to prevent it from happening at all costs.
-Manufacturing and Test/Evaluation 
-Testing, as the final stage of website creation, is critical in the process of developing high-quality software. Following the website testing, the customer is given a completed project that is free of faults, has good readability, and is deemed to be easy and convenient.
+
+## Manufacturing and Test/Evaluation 
+Testing, will be run on a regular basis along with the development phase, is critical in the process of developing high-quality software. Following the website testing, the customer is given a completed project that is free of faults, has good readability, and is deemed to be easy and convenient.
 
 Some of the tests that we going do:
-Operating System testing using Windows, Linux, Mac.
-Browser testing like Google Chrome, Internet Explorer.
-Usability Testing.
-Performance Testing includes loading time of the web page and the input.
-Security Testing : users should be restricted to access log files where website data is stored.
+- Operating System testing using Windows, Linux, Mac.
+- Browser testing like Google Chrome, Internet Explorer.
+- Usability Testing.
+- Performance Testing includes loading time of the web page and the input.
+- Security Testing : users should be restricted to access log files where website data is stored.
 
 We will perform these tests using automatic unit test as much as possible, reducing the amount of time spent on testing, thus increasing the overall efficiency of our project.
-Procurement 
-The client has agreed to pay for database and domain name hosting services. The website will be run and tested locally in developer’s environments before getting published. The client only needs to pay for the hosting cost after the website is published. In addition, the client will provide a list of organizations that will then be included in our database. 
+## Procurement 
+Since the client would prefer to find a free hosting service to save their cost, We will find a complimentary service to host the website. The website will be run and tested locally in developer’s environments before getting published. In addition, the client will provide a list of organizations that will then be included in our database. 
 
 
 
