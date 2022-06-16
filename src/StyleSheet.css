@@ -1,0 +1,233 @@
+#header {
+  transition: all 0.5s;
+  background: #008080;
+  z-index: 997;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6f2fb;
+}
+#header.header-scrolled {
+  border-color: #fff;
+  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+}
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Helvetica";
+}
+#header .logo a {
+  color: #000000;
+}
+#header .logo img {
+  max-height: 40px;
+}
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+body {
+  font-family: "Helvetica";
+  color: #444444;
+}
+
+/**
+* Navigation
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 16px;
+  color: #000000;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #2487ce;
+}
+.navbar .getstarted, .navbar .getstarted:focus {
+  background: #2487ce;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #3194db;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #2487ce;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../image-or-logo-path.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+.Resource {
+    width: 100%;
+    height: 250px;
+    padding: 18px 18px 18px 18px;
+    background: #edf0f4;
+    color: #000000;
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 4.5;
+    text-align: center;
+}
+
+.ServiceDetails {
+    width: 575px;
+    height: 59px;
+    color: #798da3;
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: Right;
+}
+.ResourceCard {
+    width: 100%;
+    height: 179px;
+    padding: 8px 8px 8px 8px;
+    background: #ffffff;
+    position: centre;
+    border-color: #c9d3dd;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px 6px 6px 6px;
+}
+.OrganizationImage {
+    width: 223px;
+    height: 150px;
+    background: #edf0f4;
+}
+.OrganizationTitle {
+    width: 329px;
+    height: 56px;
+    color: #3b4754;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.5;
+    text-align: Right;
+}
+.OrganizationBy {
+    width: 275px;
+    height: 29px;
+    color: #798da3;
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 11px;
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 0.0;
+    text-align: Right;
+}
+.LeftArrange {
+  float: left;
+  width: 25%;
+}
+.RightArrange {
+  float: center;
+  width: 40%;
+}
+.SubscriptionText {
+    width: 348px;
+    height: 21px;
+    color: #3b4754;
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: left;
+}
+.Email-Input {
+    width: 413px;
+    height: 28px;
+    background: #ffffff;
+    color: #9fafc1;
+    border-color: #c9d3dd;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px 4px 4px 4px;
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 12px;
+    text-align: right;
+}
+.SubscribeButton {
+    width: 100px;
+    height: 28px;
+    padding: 0px 10px 0px 10px;
+    background: #29323d;
+    color: #ffffff;
+    border-color: #29323d;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 2px 2px 2px;
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
