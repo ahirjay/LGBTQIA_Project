@@ -5,6 +5,24 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/00cef6843f.js" crossorigin="anonymous"></script>
+  <style>
+    .card-img {
+      transition: opacity 0.5s;
+    }
+
+    .card:hover .card-img {
+      opacity: 0.3;
+    }
+
+    .card-img-overlay {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .card:hover .card-img-overlay {
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
@@ -46,16 +64,88 @@
   <main>
     <div class="jumbotron text-center">
       <h1>This is a homepage!</h1>
+      <p class="lead">Welcome to our website</p>
     </div>
+    <!-- <style>
+      p {
+        height: fit-content
+      }
+    </style> -->
+
+
+    <div class="container" style="width: 60%">
+      <h2 class="text-center">Here are our upcoming events (hover to see details)</h2>
+      <br>
+      <div class="row">
+        <div class="col-6">
+
+          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
+            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-6">
+
+          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
+            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+
+          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
+            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
+            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
   </main>
 
-  
-  <footer class="text-muted">
+
+  <footer class="text-muted my-3">
     <div class="container">
-      <p class="float-right"> 
-        <i class="fa-brands fa-twitter-square"></i> &nbsp; 
-        <i class="fa-brands fa-instagram"></i> &nbsp; 
-        <i class="fa-brands fa-facebook-square"></i> &nbsp; 
+      <p class="float-right">
+        <i class="fa-brands fa-twitter-square"></i> &nbsp;
+        <i class="fa-brands fa-instagram"></i> &nbsp;
+        <i class="fa-brands fa-facebook-square"></i> &nbsp;
       </p>
       <p>Ten Oaks Link</p>
     </div>

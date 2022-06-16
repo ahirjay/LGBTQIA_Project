@@ -40,6 +40,12 @@
     </div>
   </nav>
 
+  <main>
+    <div class="jumbotron text-center">
+      <h1>This is a organization page!</h1>
+    </div>
+  </main>
+
   <footer class="text-muted">
     <div class="container">
       <p class="float-right"> 
