@@ -137,7 +137,7 @@ body {
     width: 575px;
     height: 59px;
     color: #798da3;
-    font-family: "Open Sans";
+    font-family: "Helvetica";
     font-weight: 400;
     font-size: 11px;
     line-height: 1.5;
@@ -172,7 +172,7 @@ body {
     width: 275px;
     height: 29px;
     color: #798da3;
-    font-family: "Open Sans";
+    font-family: "Helvetica";
     font-weight: 400;
     font-size: 11px;
     font-style: italic;
@@ -180,6 +180,54 @@ body {
     line-height: 0.0;
     text-align: Right;
 }
+.LeftArrange {
+  float: left;
+  width: 25%;
+}
+.RightArrange {
+  float: center;
+  width: 40%;
+}
+.SubscriptionText {
+    width: 348px;
+    height: 21px;
+    color: #3b4754;
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: left;
+}
+.Email-Input {
+    width: 413px;
+    height: 28px;
+    background: #ffffff;
+    color: #9fafc1;
+    border-color: #c9d3dd;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px 4px 4px 4px;
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 12px;
+    text-align: right;
+}
+.SubscribeButton {
+    width: 100px;
+    height: 28px;
+    padding: 0px 10px 0px 10px;
+    background: #29323d;
+    color: #ffffff;
+    border-color: #29323d;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 2px 2px 2px;
+    font-family: "Helvetica";
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
 
 
 

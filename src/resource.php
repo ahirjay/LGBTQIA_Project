@@ -45,7 +45,26 @@
 	<ul>
 	<a>Resources</a></ul>
 	</div>
+	<!--
+	</br>
 	<div>
+	<div class = "LeftArrange">
+	<div class = "SubscriptionText">
+	<a>&nbsp&nbsp&nbsp Subscribe for upcoming events         &nbsp</a>
+	</div>
+	</div>
+	<div class = "RightArrange">
+	<div class = "Email-Input">	
+	</div>
+	</div>
+	<div class = "SubscribeButton">
+	<a>Subcribe</a>
+	</div>
+	</div>
+	-->
+	</br>
+	<div>
+	</br>
 	<div class = ResourceCard>
 	<div class = OrganizationImage>
 	 <div class = OrganizationTitle>
@@ -60,7 +79,8 @@
 	</div>
 	</div>
 	</div>
-
+	</br>
+	
 	<div>
 	<div class = ResourceCard>
 	<div class = OrganizationImage>
@@ -76,6 +96,7 @@
 	</div>
 	 </div>
 	</div>
+	</br>
 	
 	<div>
 	<div class = ResourceCard>
@@ -92,6 +113,7 @@
 	</div>
 	 </div>
 	</div>
+	</br>
 
   <footer class="text-muted">
     <div class="container">
