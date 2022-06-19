@@ -5,6 +5,8 @@
   <title>Login</title>
   <script src="https://kit.fontawesome.com/00cef6843f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="admin-login.css">
+
 </head>
 
 <body>
@@ -39,16 +41,34 @@
       </form>
     </div>
   </nav>
-
-  <footer class="text-muted">
+  <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <input type="submit" value="Login">
+          <div class="signup_link">
+             <a href="#"> </a>
+          </div>
+          <footer class="text-muted">
     <div class="container">
-      <p class="float-right"> 
-        <i class="fa-brands fa-twitter-square"></i> &nbsp; 
-        <i class="fa-brands fa-instagram"></i> &nbsp; 
-        <i class="fa-brands fa-facebook-square"></i> &nbsp; 
+      <p class="float-right">
+        <i class="fa-brands fa-twitter-square"></i> &nbsp;
+        <i class="fa-brands fa-instagram"></i> &nbsp;
+        <i class="fa-brands fa-facebook-square"></i> &nbsp;
       </p>
       <p>Ten Oaks Link</p>
-    </div>
+        </form>
+      </div>
   </footer>
 </body>
 
