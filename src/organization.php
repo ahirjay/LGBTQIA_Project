@@ -1,12 +1,14 @@
-<!-- Page Name: Organization.php
-     By: Yitao Cui
-     stdId: 040981835
-     
-     Purpose: This page will list all the Partner 2SLGBT+ Organizations in Ottawa Area
-     Functions: Page has been put into differnt blocks for each organizations, Each block
-                contain the logo of the organization, the name of organization as well as
-                background about the organization, user can visit the organization's home 
-                page by clicked on the organization name
+<!--Page Name: organization.php
+	
+    By: Yitao Cui
+    Student ID: 040981835
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Purpose: This page will list all the Partner 2SLGBT+ Organizations in Ottawa Area
+    Functions: Page has been put into differnt blocks for each organizations, Each block
+        contain the logo of the organization, the name of organization as well as
+        background about the organization, user can visit the organization's home 
+        page by clicked on the organization name
  -->
 
 <!DOCTYPE html>
@@ -35,13 +37,7 @@
 	display: flex;
 }
 
-.p1 {
-	font-family: "Papyrus", Fantasy;
-}
 
-.p3 {
-	font-family: "Lucida Console", "Courier New", monospace;
-}
 
 #imgDiv {
 	height: 200px;
@@ -116,7 +112,7 @@ img {
 		<div class="container" style="width: 100%">
 			<div class="row">
 				<div id="imgDiv">
-					<img src="images/3.png" width="180" height="150">
+					<img src="../assets/images/3.png" width="180" height="150">
 				</div>
 				<div id="txtDiv">
 					<h3 class="p1">
@@ -130,7 +126,7 @@ img {
 			<br /> <br /> <br />
 			<div class="row">
 				<div id="imgDiv">
-					<img src="images/2.jpg" width="180" height="150">
+					<img src="../assets/images/2.jpg" width="180" height="150">
 				</div>
 				<div id="txtDiv">
 					<h3 class="p1">
@@ -146,7 +142,7 @@ img {
 			<br /> <br /> <br />
 			<div class="row">
 				<div id="imgDiv">
-					<img src="images/1.jpg" width="180" height="150">
+					<img src="../assets/images/1.jpg" width="180" height="150">
 				</div>
 				<div id="txtDiv">
 					<h3 class="p1">

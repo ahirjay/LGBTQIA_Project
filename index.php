@@ -1,3 +1,15 @@
+<!--Page Name: index.php
+	
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	  Client: Charlie Dazé 
+    Prototype: 1
+    Purpose: This page is the home page of the project to welcome users.
+    Functions: Page has been divided to show events. It also has a form for user to subscribe to upcoming events.
+ -->
+
+
 <!DOCTYPE html>
 <html>
 
@@ -73,14 +85,28 @@
     </style> -->
 
 
+
     <div class="container" style="width: 60%">
+      <form>
+        <div class="form-group row form-control-lg">
+          <label class="col-sm-5 col-form-label">&nbsp&nbsp&nbsp&nbsp&nbspSubscribe for upcomming Events</label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control" placeholder="Please Enter your Email">
+          </div>
+          <div class="col-sm-1">
+            <button type="Submit" class="btn btn-secondary">Submit</button>
+          </div>
+        </div>
+      </form>
+      <br>
+      <hr>
       <h2 class="text-center">Here are our upcoming events (hover to see details)</h2>
       <br>
       <div class="row">
         <div class="col-6">
 
           <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
             <div class="card-img-overlay">
               <h5 class="card-title">Light card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,7 +118,7 @@
         <div class="col-6">
 
           <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
             <div class="card-img-overlay">
               <h5 class="card-title">Light card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -106,7 +132,7 @@
         <div class="col-6">
 
           <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
             <div class="card-img-overlay">
               <h5 class="card-title">Light card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -119,7 +145,7 @@
         <div class="col-6">
 
           <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/card.jpg" alt="Card image">
+            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
             <div class="card-img-overlay">
               <h5 class="card-title">Light card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

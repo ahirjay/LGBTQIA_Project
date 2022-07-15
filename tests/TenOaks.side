@@ -64,7 +64,7 @@
     }]
   }, {
     "id": "30ccc9b6-19b5-4652-985a-e40558de0831",
-    "name": "homeToresource",
+    "name": "home to resource",
     "commands": [{
       "id": "b365d260-fd42-45e6-b654-5410f7f8aee1",
       "comment": "",
@@ -98,7 +98,7 @@
       "id": "829f48bd-3b4c-4225-b332-0decafa12c3f",
       "comment": "home to resources page check",
       "command": "assertText",
-      "target": "css=.Resource > ul",
+      "target": "css=h1",
       "targets": [
         ["css=.Resource > ul", "css:finder"],
         ["xpath=//div[3]/ul", "xpath:position"],
@@ -289,7 +289,7 @@
       "id": "eac528d9-89c7-45da-9ca8-7a5aadb12f19",
       "comment": "orgnizations to resource navigation",
       "command": "assertText",
-      "target": "linkText=Resources",
+      "target": "css=h1",
       "targets": [
         ["linkText=Resources", "linkText"],
         ["css=ul > a", "css:finder"],
@@ -733,21 +733,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d333dfc7-1017-4bb2-9992-1fc2d4b438fa",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=About Us",
-      "targets": [
-        ["linkText=About Us", "linkText"],
-        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
-        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
-        ["xpath=//div[@id='navbarTogglerDemo03']/ul/li[4]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, './src/about-us.php')]", "xpath:href"],
-        ["xpath=//li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "32f95bd9-0192-459e-b5c7-83896acc813e",
       "comment": "",
       "command": "click",
@@ -825,13 +810,11 @@
       "id": "1cbedf35-ed6d-44fc-b657-f0a72eb9056c",
       "comment": "about us to resource page nav",
       "command": "assertText",
-      "target": "linkText=Resources",
+      "target": "css=h1",
       "targets": [
-        ["linkText=Resources", "linkText"],
-        ["css=ul > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Resources')]", "xpath:link"],
-        ["xpath=//ul/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Resources')]", "xpath:innerText"]
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Resources')]", "xpath:innerText"]
       ],
       "value": "Resources"
     }]
@@ -1063,7 +1046,7 @@
       "id": "b241c4dc-9a97-4836-bc23-56b9fbdb6e27",
       "comment": "admin to resources nav",
       "command": "assertText",
-      "target": "linkText=Resources",
+      "target": "css=h1",
       "targets": [
         ["linkText=Resources", "linkText"],
         ["css=ul > a", "css:finder"],

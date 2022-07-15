@@ -1,3 +1,13 @@
+<!--Page Name: admin-login.php
+	
+    By: Ghaith Ali
+    Student ID: 040930758
+    Professor: Leanne Seaward
+	  Client: Charlie Dazé 
+    Prototype: 1
+    Purpose: This page is to show a form an admin can login to do CRUD operations event.
+    Functions: A form has a username, password fields for admin to enter their credentials and login.
+ -->
 <!DOCTYPE html>
 <html>
 
@@ -5,7 +15,7 @@
   <title>Login</title>
   <script src="https://kit.fontawesome.com/00cef6843f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="admin-login.css">
+  <link rel="stylesheet" href="./admin-login.css">
 
 </head>
 
