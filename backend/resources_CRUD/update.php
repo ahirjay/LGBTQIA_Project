@@ -152,7 +152,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     mysqli_close($link);
 } else{
     // Check existence of id parameter before processing further
-    if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
+    if(isset($_GET["id"]) && !empty($_GET["id"])){
         // Get URL parameter
         $id =  trim($_GET["id"]);
         
@@ -228,7 +228,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="mt-5">Update Record</h2>
+<<<<<<< HEAD
                     <p>Please edit the input values and submit to update the resource record.</p>
+=======
+                    <p>Please edit the input values and submit to update the employee record.</p>
+>>>>>>> cab9cff2a1a7a968049d19c01485fecc0a08e2d4
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
 							<label>ResourceName</label> <input type="text"

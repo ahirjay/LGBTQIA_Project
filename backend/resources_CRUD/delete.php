@@ -1,10 +1,9 @@
 <?php
 
-$submit = trim($_POST["submit"]);
-$id = trim($_GET["id"]);
-if (!isset($submit) && empty($id)) {
+// Include config file
+if (! isset($_POST["submit"]) && empty($_GET["id"])) {
     // URL doesn't contain id parameter. Redirect to error page
-    header("location: ../shared/error.php");
+    header("location: error.php");
     exit();
 }
 

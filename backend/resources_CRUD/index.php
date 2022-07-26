@@ -31,10 +31,14 @@ table tr td:last-child {
 <body>
 	<div class="wrapper">
 		<div class="container-fluid">
+		<form action="search.php" method="POST">
+							<input type="text" name="searchterm" placeholder="search for orgnization and description">
+							<input type ="submit" value = "Search">
+						</form>	
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mt-5 mb-3 clearfix">
-						<h2 class="pull-left">Resources Details</h2>
+						<h2 class="pull-left">Resources Details</h2>					
 						<!--Tom : changed label name-->
 						<a href="create.php" class="btn btn-success pull-right"><i
 							class="fa fa-plus"></i> Add New Resources</a>
