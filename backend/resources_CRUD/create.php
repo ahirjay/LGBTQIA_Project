@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "config.php";
+require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
 // Tom: changed iniaial variables and error

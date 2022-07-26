@@ -5,14 +5,15 @@
  */
 /* DROP TABLE Sections; */
 CREATE TABLE Sections (
-    SectionID int,
-    SectionName varchar(255),
-    SectionDescription varchar(255)
+    SectionID int NOT NULL AUTO_INCREMENT,
+    SectionName varchar(255) NOT NULL,
+    SectionDescription varchar(255) NOT NULL,
+    PRIMARY KEY (SectionID)
 );	
 
 /* DROP TABLE Resources; */
 CREATE TABLE Resources (
-    ResourceID int,
+    ResourceID int NOT NULL AUTO_INCREMENT,
     ResourceName varchar (100),
     Phone varchar(15),
     Email varchar(255),
@@ -22,9 +23,19 @@ CREATE TABLE Resources (
     CommunityCare varchar(255),
     Text varchar(255),
     Description varchar(7500),
-    SectionID int,
+    SectionID int NOT NULL,
     PRIMARY KEY (ResourceID),
     FOREIGN KEY (SectionID) REFERENCES Sections(SectionID)
+);
+
+/* DROP TABLE Events; */
+CREATE TABLE Events (
+    EventID int NOT NULL AUTO_INCREMENT,
+    EventName varchar (100),
+    EventDescription varchar(255),
+    EventImage varchar(255),
+    EventDate datetime,
+    PRIMARY KEY (EventID)
 );
 
 /* Resources */

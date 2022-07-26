@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "config.php";
+require_once "../shared/config.php";
  
 // Define variables and initialize with empty values
 // Tom: changed iniaial variables and error
@@ -187,7 +187,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     $SectionID = $row["SectionID"];
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
-                    header("location: error.php");
+                    header("location: ../shared/error.php");
                     exit();
                 }
                 
@@ -203,7 +203,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         mysqli_close($link);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
-        header("location: error.php");
+        header("location: ../shared/error.php");
         exit();
     }
 }
@@ -228,7 +228,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="mt-5">Update Record</h2>
-                    <p>Please edit the input values and submit to update the employee record.</p>
+                    <p>Please edit the input values and submit to update the resource record.</p>
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
 							<label>ResourceName</label> <input type="text"

@@ -20,10 +20,17 @@
   <style>
     .card-img {
       transition: opacity 0.5s;
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
     }
 
     .card:hover .card-img {
       opacity: 0.3;
+    }
+
+    .main-img {
+      height: calc(30vw + 17px);
     }
 
     .card-img-overlay {
@@ -87,79 +94,73 @@
 
 
     <div class="container" style="width: 60%">
-      <form>
-        <div class="form-group row form-control-lg">
-          <label class="col-sm-5 col-form-label">&nbsp&nbsp&nbsp&nbsp&nbspSubscribe for upcomming Events</label>
-          <div class="col-sm-6">
-            <input type="email" class="form-control" placeholder="Please Enter your Email">
-          </div>
-          <div class="col-sm-1">
-            <button type="Submit" class="btn btn-secondary">Submit</button>
-          </div>
-        </div>
-      </form>
-      <br>
-      <hr>
+    
       <h2 class="text-center">Here are our upcoming events (hover to see details)</h2>
       <br>
-      <div class="row">
-        <div class="col-6">
-
-          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Light card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+      <?php
+      // Include config file
+      require_once "backend/shared/config.php";
 
 
-          </div>
-        </div>
-        <div class="col-6">
+      // Attempt select query execution
+      $sql = "SELECT * FROM events ORDER BY EventDate LIMIT 3";
+      if ($result = mysqli_query($link, $sql)) {
+        if (mysqli_num_rows($result) > 0) {
+        
+            echo '<div class="row">';
+            $row = mysqli_fetch_array($result);
+            echo '<div class="col-7">';
 
-          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Light card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+            echo '<div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">';
+            echo '<img class="card-img main-img" src="./assets/images/'.$row['EventImage'].'"alt="Event Image">';
+            echo '<div class="card-img-overlay">';
+            echo '<h5 class="card-title">'.$row['EventName'].'</h5>';
+            echo '<p class="card-text">'.$row['EventDescription'].'</p>';
+            echo '<p class="card-text">Event Date: '.$row['EventDate'].'</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
+            
 
+  
+            $row = mysqli_fetch_array($result);
+            echo '<div class="col-5">';
 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
+            echo '<div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)/2">';
+            echo '<img class="card-img" src="./assets/images/'.$row['EventImage'].'"alt="Event Image">';
+            echo '<div class="card-img-overlay">';
+            echo '<h5 class="card-title">'.$row['EventName'].'</h5>';
+            echo '<p class="card-text">'.$row['EventDescription'].'</p>';
+            echo '<p class="card-text">Event Date: '.$row['EventDate'].'</p>';
+            echo '</div>';
+            echo '</div>';
 
-          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Light card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+            $row = mysqli_fetch_array($result);
+            echo '<div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)/2">';
+            echo '<img class="card-img" src="./assets/images/'.$row['EventImage'].'"alt="Event Image">';
+            echo '<div class="card-img-overlay">';
+            echo '<h5 class="card-title">'.$row['EventName'].'</h5>';
+            echo '<p class="card-text">'.$row['EventDescription'].'</p>';
+            echo '<p class="card-text">Event Date: '.$row['EventDate'].'</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
+            echo "</div>";
+          
 
+          
+          // Free result set
+          mysqli_free_result($result);
+        } else {
+          echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
+        }
+      } else {
+        echo "Oops! Something went wrong. Please try again later.";
+      }
 
-          </div>
-
-        </div>
-        <div class="col-6">
-
-          <div class="card bg-light text-black mb-3" style="height: calc(100% - 16px)">
-            <img class="card-img" src="./assets/images/card.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Light card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-
-
-
-
+      // Close connection
+      mysqli_close($link);
+      ?>
 
     </div>
 

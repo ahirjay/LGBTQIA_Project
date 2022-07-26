@@ -34,17 +34,17 @@ table tr td:last-child {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mt-5 mb-3 clearfix">
-						<h2 class="pull-left">Resources Details</h2>
+						<h2 class="pull-left">Sections Details</h2>
 						<!--Tom : changed label name-->
 						<a href="create.php" class="btn btn-success pull-right"><i
-							class="fa fa-plus"></i> Add New Resources</a>
+							class="fa fa-plus"></i> Add New Sections</a>
 					</div>
                     <?php
                     // Include config file
                     require_once "../shared/config.php";
 
                     // Attempt select query execution
-                    $sql = "SELECT * FROM Resources"; // Tom : changed from $sql = "SELECT * FROM employee"
+                    $sql = "SELECT * FROM sections"; // Tom : changed from $sql = "SELECT * FROM employee"
                     if ($result = mysqli_query($link, $sql)) {
                         if (mysqli_num_rows($result) > 0) {
                             echo '<table class="table table-bordered table-striped">';
@@ -52,23 +52,19 @@ table tr td:last-child {
                             echo "<tr>"; // Tom: changed field, for more check for Resources Table
                             echo "<th>ID</th>";
                             echo "<th>Name</th>";
-                            echo "<th>Phone</th>";
-                            echo "<th>Email</th>";
-                            echo "<th>Website</th>";
+                            echo "<th>Description</th>";
                             echo "</tr>";
                             echo "</thead>";
                             echo "<tbody>";
                             while ($row = mysqli_fetch_array($result)) {
                                 echo "<tr>"; // Tom: changed rows label, for more check for Resources Table
-                                echo "<td>" . $row['ResourceID'] . "</td>";
-                                echo "<td>" . $row['ResourceName'] . "</td>";
-                                echo "<td>" . $row['Phone'] . "</td>";
-                                echo "<td>" . $row['Email'] . "</td>";
-                                echo "<td>" . $row['Website'] . "</td>";
+                                echo "<td>" . $row['SectionID'] . "</td>";
+                                echo "<td>" . $row['SectionName'] . "</td>";
+                                echo "<td>" . $row['SectionDescription'] . "</td>";
                                 echo "<td>";
-                                echo '<a href="read.php?id=' . $row['ResourceID'] . '" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
-                                echo '<a href="update.php?id=' . $row['ResourceID'] . '" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
-                                echo '<a href="delete.php?id=' . $row['ResourceID'] . '" title="Delete Resources" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
+                                echo '<a href="read.php?id=' . $row['SectionID'] . '" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
+                                echo '<a href="update.php?id=' . $row['SectionID'] . '" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
+                                echo '<a href="delete.php?id=' . $row['SectionID'] . '" title="Delete Resources" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
                                 echo "</td>";
                                 echo "</tr>";
                             }

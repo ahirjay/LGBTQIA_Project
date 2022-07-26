@@ -1,8 +1,6 @@
 <?php
 
-$submit = trim($_POST["submit"]);
-$id = trim($_GET["id"]);
-if (!isset($submit) && empty($id)) {
+if (!isset($_POST["submit"]) && empty($_GET["id"])) {
     // URL doesn't contain id parameter. Redirect to error page
     header("location: ../shared/error.php");
     exit();
@@ -10,11 +8,11 @@ if (!isset($submit) && empty($id)) {
 
 if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
 
-    // Process delete operation after confirmation
+    // require config file
     require_once ("../shared/config.php");
 
     // Prepare a delete statement
-    $sql = "DELETE FROM resources WHERE ResourceID = ?";
+    $sql = "DELETE FROM sections WHERE SectionID = ?";
 
     if ($stmt = mysqli_prepare($link, $sql)) {
         // Set parameters
@@ -60,14 +58,14 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="mt-5 mb-3">Delete Resources</h2>
+					<h2 class="mt-5 mb-3">Delete Sections</h2>
 					<form
 						action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
 						method="post">
 						<div class="alert alert-danger">
 							<input type="hidden" name="ResourceID"
 								value="<?php echo trim($_GET["id"]); ?>" />
-							<p>Are you sure you want to delete this resources?</p>
+							<p>Are you sure you want to delete this resource section? <?php echo trim($_GET["id"]); ?></p>
 							<p>
 								<input type="hidden" value="<?php echo $_GET["id"]?>"
 									name="submit" id="submit"> <input type="submit" value="Yes"

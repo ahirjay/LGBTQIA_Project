@@ -2,7 +2,7 @@
 // Check existence of id parameter before processing further
 if (isset($_GET["id"]) && ! empty(trim($_GET["id"]))) {
     // Include config file
-    require_once "config.php";
+    require_once "../shared/config.php";
 
     // Prepare a select statement
     $sql = "SELECT * FROM resources WHERE ResourceID = ?";
@@ -40,7 +40,7 @@ if (isset($_GET["id"]) && ! empty(trim($_GET["id"]))) {
                 $SectionID = $row["SectionID"];
             } else {
                 // URL doesn't contain valid id parameter. Redirect to error page
-                header("location: error.php");
+                header("location: ../shared/error.php");
                 exit();
             }
         } else {
@@ -55,7 +55,7 @@ if (isset($_GET["id"]) && ! empty(trim($_GET["id"]))) {
     mysqli_close($link);
 } else {
     // URL doesn't contain id parameter. Redirect to error page
-    header("location: error.php");
+    header("location: ../shared/error.php");
     exit();
 }
 ?>
