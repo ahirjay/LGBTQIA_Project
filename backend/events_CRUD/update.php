@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 // Include config file
 require_once "../shared/config.php";
  
@@ -123,7 +131,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update Record</title>
+    <title>Update Events</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .wrapper{
@@ -137,8 +145,8 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="mt-5">Update Record</h2>
-                    <p>Please edit the input values and submit to update the section record.</p>
+                    <h2 class="mt-5">Update Events</h2>
+                    <p>Please edit the input values and submit to update the event record.</p>
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
 							<label></label> <input type="text"

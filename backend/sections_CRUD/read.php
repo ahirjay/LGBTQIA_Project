@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 // Check existence of id parameter before processing further
 
 $id = trim($_GET["id"]);
@@ -59,7 +67,7 @@ if (isset($_GET["id"]) && !empty($id)) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>View Resources</title>
+<title>View Sections</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>

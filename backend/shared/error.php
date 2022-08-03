@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 
 if (!isset($_POST["submit"]) && empty($_GET["id"])) {
     // URL doesn't contain id parameter. Redirect to error page
@@ -24,8 +32,13 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
         // Attempt to execute the prepared statement
         if (mysqli_stmt_execute($stmt)) {
             // Records deleted successfully. Redirect to landing page
-            header("location: index.php");
-            exit();
+            $sql = "SET @count = 0; UPDATE Sections SET SectionID = @count:= @count + 1; ALTER TABLE Sections AUTO_INCREMENT = 1;";
+			if ($result = mysqli_multi_query($link, $sql)) {
+				header("location: index.php");
+				exit();
+			} else {
+				echo mysqli_error($link);
+			}
         } else {
             echo "Oops! Something went wrong. Please try again later.";
         }
@@ -43,7 +56,7 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Delete Resources</title>
+<title>Delete Sections</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>

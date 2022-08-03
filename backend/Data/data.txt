@@ -25,7 +25,7 @@ Website: https://familyservicesottawa.org/services/around-the-rainbow/
 
 Multiple different support groups for 2SLGBTQ+ folks of all ages. 
 
- Email: programming@kindspace.ca 
+Email: programming@kindspace.ca 
 Phone: 613-563-4818
 Website: https://kindspace.ca/ 
 
@@ -85,29 +85,22 @@ Section 2: Mental Health Supports
 Mental Health Supports Description
 
 1.	Centretown Community Health Centre – Trans Health Counselling Program
--	 The community health centre in Centretown has a counselling program for trans folks,
-free to access and community members can self-refer themselves.
+-	 The community health centre in Centretown has a counselling program for trans folks, free to access and community members can self-refer themselves.
 -	For youth age 16-24, waitlist is a couple of months.
--	Cannot guarantee staff will be trans-identified, but they are well-versed on trans
-identities, and possess a lot of experience working directly with the trans community.
+-	Cannot guarantee staff will be trans-identified, but they are well-versed on trans identities, and possess a lot of experience working directly with the trans community.
 -	Typically offer between 6-8 consecutive sessions with a counsellor.
 -	Must live within their catchment area to access the program.
 
-Contact Info
 -	Phone: 613-233-4443 ext. 2109
 -	Website: https://www.centretownchc.org/programs-services/lgbtq-trans-health-program/ 
 
 2.	Counselling Connect
--	Free single-session counselling, depending on need can have up to three consecutive
- appointments.
+-	Free single-session counselling, depending on need can have up to three consecutive appointments.
 -	Can schedule an appointment directly on the website.
--	All providers for walk-in counselling are from a broad clinical background (e.g.,
- Counselling Connect is partnered with multiple community health centres in Ottawa).
--	This is also a great option if you need to speak with a mental health
- provider on a relatively quick basis, as opposed to waiting several months.
+-	All providers for walk-in counselling are from a broad clinical background (e.g., Counselling Connect is partnered with multiple community health centres in Ottawa).
+-	This is also a great option if you need to speak with a mental health provider on a relatively quick basis, as opposed to waiting several months.
 -	Counselling Connect offers 2SLGBTQ+ counselling for folks 16+; youth counselling for folks 12-17; addictions counselling for 12+; counselling for African, Caribbean, and Black communities 16+, and counselling for Indigenous folks of all ages. 
 
-Contact Info
 -	Website: https://www.counsellingconnect.org/ 
 
 3.	Friends of Ruby
@@ -116,10 +109,8 @@ Contact Info
 -	Counselling staff reflects diversity of the community, English-speaking with potential for other languages.
 -	Located in Toronto, but services offered virtually.
 
-Contact Info
 -	Email: info@friendsofruby.ca 
--	Website: https://www.friendsofruby.ca/programs-and-services/mental-health-and-
- wellness-support/ 
+-	Website: https://www.friendsofruby.ca/programs-and-services/mental-health-and-wellness-support/ 
 
 4.	Melissa Flatla
 -	Registered Psychotherapist, Red Oak Psychotherapy. 
@@ -127,9 +118,8 @@ Contact Info
 -	Cost per Session: Up to $150, sliding scale options available. 
 -	Seeing folks in-person and virtually. 
 
-Contact Info
 -	Email: mflatla@redoakpsychotherapy.com
--	Phone: (343) 944-4852 
+-	Phone: 343-944-4852 
 -	Website: https://www.psychologytoday.com/ca/therapists/melissa-flatla-nepean-on/755628?sid=5f8db19815c00&name=melissa+flatla&ref=1&tr=Results 
 
 5.	Nathan Strayed
@@ -137,18 +127,14 @@ Contact Info
 -	Counsels ages 11+, can work with families of 2SLGBTQ+ youth. 
 -	Cost per Session: Ranges between $100-150. 
 
-Contact Info
--	Phone: (778) 784-5185
+-	Phone: 778-784-5185
 
 6.	Trans Lifeline
 -	A crisis and distress line run by and for the trans community.
--	Divested from police, and you are guaranteed to speak with a line operator who is trans-
-identified.
+-	Divested from police, and you are guaranteed to speak with a line operator who is trans-identified.
 -	Also available as a resource to ask questions and be connected with local resources.
--	Open 24/7, but currently running at reduced capacity. Operators are guaranteed to be on
-call from 5pm – 1am.
+-	Open 24/7, but currently running at reduced capacity. Operators are guaranteed to be on call from 5pm – 1am.
 
-Contact Info
 -	Phone: 1-877-330-6366
 -	Website: https://translifeline.org/ 
 
@@ -165,8 +151,7 @@ Transition Supports Description
 
 2.	Affirming Gear
 
--	ROSE Gender Affirming Gear Program – Free program for students 16+, includes
-binders, packers, gaffs, makeup and more.
+-	ROSE Gender Affirming Gear Program – Free program for students 16+, includes binders, packers, gaffs, makeup and more.
 -	Gendergear.ca - a variety of affirming gear including gaffs, breast forms, binders, and packers. 
 -	gc2b - chest binders designed by and for trans people. 
 -	Underworks - chest binders. 
@@ -174,9 +159,7 @@ binders, packers, gaffs, makeup and more.
 
 3.	Medical Transition Resources
 
--	Trans Health Ottawa – Full directory of services available to the trans/gender diverse community in Ottawa. 
-Website: https://transhealthottawa.org/ 
-
+-	Trans Health Ottawa – Full directory of services available to the trans/gender diverse community in Ottawa. Website: https://transhealthottawa.org/ 
 -	Rainbow Health Ontario Feminizing Hormone Therapy Resource - interactive diagram of changes associated with feminizing hormone therapy.
 -	Rainbow Health Ontario Masculinizing Hormone Therapy Resource - interactive diagram of changes associated with masculinizing hormone therapy. 
 -	General information about medical transition for trans children and youth

@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 
 // Include config file
 if (! isset($_POST["submit"]) && empty($_GET["id"])) {
@@ -25,8 +33,13 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
         // Attempt to execute the prepared statement
         if (mysqli_stmt_execute($stmt)) {
             // Records deleted successfully. Redirect to landing page
-            header("location: index.php");
-            exit();
+            $sql = "SET @count = 0; UPDATE resources SET ResourceID = @count:= @count + 1; ALTER TABLE resources AUTO_INCREMENT = 1;";
+			if ($result = mysqli_multi_query($link, $sql)) {
+				header("location: ../index.php");
+				exit();
+			} else {
+				echo mysqli_error($link);
+			}
         } else {
             echo "Oops! Something went wrong. Please try again later.";
         }

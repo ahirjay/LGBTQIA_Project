@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 // Include config file
 require_once "../shared/config.php";
 
@@ -69,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Create Resource</title>
+<title>Create Section</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
@@ -84,8 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="mt-5">Create Resource</h2>
-					<p>Please fill this form and submit to add resource to the
+					<h2 class="mt-5">Create Section</h2>
+					<p>Please fill this form and submit to add section to the
 						database.</p>
 					<form
 						action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"

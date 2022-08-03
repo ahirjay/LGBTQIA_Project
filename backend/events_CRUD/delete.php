@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 
 if (!isset($_POST["submit"]) && empty($_GET["id"])) {
     // URL doesn't contain id parameter. Redirect to error page
@@ -81,7 +89,7 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Delete Resources</title>
+<title>Delete Event</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>

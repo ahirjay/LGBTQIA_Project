@@ -19,11 +19,10 @@ fs.readFile("./data.txt", (error, data) => {
     const dataString = data.toString();
     const dataSections = dataString.split("Section");
 
-
     const newDataArray = [];
     const resources = [];
     let resourceID = 0;
-    let fields = ['Website: ', 'Email: ', 'Phone: ', 'Advocacy: ', 'Outreach: ', 'Program: ', 'CommunityCare: ', 'Text: '];
+    let fields = ['Website: ', 'Email: ', 'Phone: ', 'Advocacy: ', 'Outreach: ', 'Programming: ', 'Community Care: ', 'Text: '];
 
     for (let i = 1; i < dataSections.length; i++) {
         const dataLines = dataSections[i].split('\r\n');  
@@ -54,6 +53,9 @@ fs.readFile("./data.txt", (error, data) => {
             for(const field of fields) {
                 if (dataLines[j].includes(field)) {
                     let attributeName = field.substring(0, field.length - 2);
+                    if (attributeName == 'Community Care') {
+                        attributeName = 'CommunityCare';
+                    }
                     resource[attributeName] = dataLines[j].split(field)[1];
                     hasField = true;
                     break;
@@ -77,7 +79,7 @@ fs.readFile("./data.txt", (error, data) => {
     }
     
     for (const resource of resources) {
-        let insertQuery = "INSERT INTO `resources` (`ResourceID`, `ResourceName`";
+        let insertQuery = "INSERT INTO `resources` (`ResourceName`";
 
         for (const property in resource) {
             if (property == "id" || property == "name" || property == "sectionName" || property == "sectionDescription") {
@@ -89,9 +91,10 @@ fs.readFile("./data.txt", (error, data) => {
         insertQuery += ") VALUES (";
 
         for (const property in resource) {
-            if (property == "sectionName" || property == "sectionDescription") {
+            if (property == "sectionName" || property == "sectionDescription" || property == "id") {
                 continue;
             }
+
             insertQuery += `'${resource[property]}', `;
         }
 

@@ -1,11 +1,19 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 // Include config file
 require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
 // Tom: changed iniaial variables and error
 $EventName = $EventDescription = "";
-$EventName_err = "";
+$EventName_err = $Description = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -105,7 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="UTF-8">
-    <title>Create Resource</title>
+    <title>Create Event</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .wrapper {
@@ -121,7 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="mt-5">Create Event</h2>
-                    <p>Please fill this form and submit to add resource to the
+                    <p>Please fill this form and submit to add event to the
                         database.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
                         <div class="form-group">

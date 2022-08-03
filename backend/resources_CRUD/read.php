@@ -1,4 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
+  header("location: ../../src/admin-login.php");
+  exit;
+} 
+?>
+
+<?php
 // Check existence of id parameter before processing further
 if (isset($_GET["id"]) && ! empty($_GET["id"])) {
     // Include config file
