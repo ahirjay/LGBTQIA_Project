@@ -1,3 +1,13 @@
+<!--Page Name: delete.php
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Deletes an event.
+ -->
+
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -22,7 +32,7 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
     // Prepare a delete statement
 	$targetDir = "../../assets/images/";
 
-	$sql = "SELECT EventImage FROM events WHERE EventID = ?";
+	$sql = "SELECT EventImage FROM Events WHERE EventID = ?";
     
 
 	if ($stmt = mysqli_prepare($link, $sql)) {
@@ -58,13 +68,13 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
         }
     }
 
-	$sql = "DELETE FROM events WHERE EventID = ?";
+	$sql = "DELETE FROM Events WHERE EventID = ?";
     if ($stmt = mysqli_prepare($link, $sql)) {
         // Bind variables to the prepared statement as parameters
         mysqli_stmt_bind_param($stmt, "i", $param_id);
 
         if (mysqli_stmt_execute($stmt)) {
-			$sql = "SET @count = 0; UPDATE events SET EventID = @count:= @count + 1; ALTER TABLE events AUTO_INCREMENT = 1;";
+			$sql = "SET @count = 0; UPDATE Events SET EventID = @count:= @count + 1; ALTER TABLE Events AUTO_INCREMENT = 1;";
 			if ($result = mysqli_multi_query($link, $sql)) {
 				header("location: index.php");
 				exit();

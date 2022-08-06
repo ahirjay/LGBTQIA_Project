@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Page Name: phpunit.xml
+    By: Huy Vo.
+    Student ID: 040993746.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: File to declare test suites and settings for running them. -->
+
+
+<phpunit bootstrap="vendor/autoload.php" colors="true" stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Input">
+            <directory>input_tests</directory>
+        </testsuite>
+        <testsuite name="Admins">
+            <directory>admin_tests</directory>
+        </testsuite>
+        <testsuite name="Sections">
+            <directory>section_tests</directory>
+        </testsuite>
+        <testsuite name="Events">
+            <directory>event_tests</directory>
+        </testsuite>
+        <testsuite name="Resources">
+            <directory>resource_tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

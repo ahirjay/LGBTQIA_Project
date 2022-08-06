@@ -28,7 +28,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && trim($_POST['usern
   require_once "../backend/shared/password.php";
 
   $Message_Err = "";
-  $sql = "SELECT * FROM admins WHERE username = ?";
+  $sql = "SELECT * FROM Admins WHERE username = ?";
   if ($stmt = mysqli_prepare($link, $sql)) {
     $username = trim($_POST['username']);
     mysqli_stmt_bind_param($stmt, "s", $username);
@@ -125,9 +125,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && trim($_POST['usern
       padding: 30px;
     }
 
-    .navbar {
-      
-    }
+    .navbar {}
 
     .logo img {
       position: absolute;
@@ -158,7 +156,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && trim($_POST['usern
           <a class="nav-item nav-link" href="../index.php">Home</a>
           <a class="nav-item nav-link" href="./trans-health.php">Navigating Trans Health</a>
           <a class="nav-item nav-link" href="./about-us.php">About Us</a>
-          <a class="nav-item nav-link active" style="color: white;" href="./admin-login.php">Login (for admins only)</a>
+          <a class="nav-item nav-link active" style="color: white;" href="./admin-login.php">Login (for Admins only)</a>
         </div>
       </div>
     </nav>
@@ -187,9 +185,9 @@ if (isset($_POST['username']) && isset($_POST['password']) && trim($_POST['usern
 <footer id="footer">
   <div class="container">
     <p class="float-right">
-      <i class="fa-brands fa-twitter-square"></i> &nbsp;
-      <i class="fa-brands fa-instagram"></i> &nbsp;
-      <i class="fa-brands fa-facebook-square"></i> &nbsp;
+      <a href="https://twitter.com/tenoaksproject?lang=en" style="color: inherit" target=”_blank”><i class="fa-brands fa-twitter-square"></i></a> &nbsp;
+      <a href="https://www.instagram.com/tenoaksproject/?hl=en" style="color: inherit" target=”_blank”> <i class="fa-brands fa-instagram"></i></a> &nbsp;
+      <a href="https://www.facebook.com/TenOaks/" style="color: inherit" target=”_blank”><i class="fa-brands fa-facebook-square"></i></a> &nbsp;
     </p>
     <p>Ten Oaks Link</p>
   </div>

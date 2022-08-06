@@ -1,3 +1,13 @@
+<!--Page Name: create.php
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Creates an event.
+ -->
+
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -12,8 +22,8 @@ require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
 // Tom: changed iniaial variables and error
-$EventName = $EventDescription = "";
-$EventName_err = $Description = "";
+$EventName = $EventDescription = $EventDate = $EventImage = "";
+$EventName_err = $EventDescription_err = $EventImage_err = $EventDate_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,17 +42,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $EventName = $input_name;
     }
 
-    // Tom: Validate Description
-    $input_description = trim($_POST["Description"]);
+    // Tom: Validate EventDescription
+    $input_description = trim($_POST["EventDescription"]);
     if (empty($input_description)) {
-        $Description_err = "Please enter some Description.";
+        $Description_err = "Please enter some EventDescription.";
     } else {
-        $Description = $input_description;
+        $EventDescription = $input_description;
     }
 
     // Huy: Uploading variables
     $targetDir = "../../assets/images/";
-    $fileName = $targetFilePath = $fileType = $allowTypes = "";
+    $fileName = $targetFilePath = $allowTypes = "";
 
     if (empty($_FILES["EventImage"]["name"])) {
         $EventImage_err = "Please select at least 1 file to upload.";
@@ -51,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $temp = explode(".", $_FILES["EventImage"]["name"]);
         $newfilename = uniqid('img_').end($temp);
         $targetFilePath = $targetDir . $newfilename;
-        $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+        $fileType = strtolower(end($temp));
         $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
         //Huy: Handling Image Uploading
         if (!in_array($fileType, $allowTypes)) {
@@ -69,15 +79,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // Tom: Check input errors before inserting in database
-    if (empty($EventName_err) && empty($Description_err)) {
+    if (empty($EventName_err) && empty($EventDescription_err) && empty($EventDate_err) && empty($EventImage_err)) {
         // Prepare an insert statement
-        $sql = "INSERT INTO events (EventName, EventDescription, EventImage, EventDate) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO Events (EventName, EventDescription, EventImage, EventDate) VALUES (?, ?, ?, ?)";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
 
             // Set parameters
             $param_name = $EventName;
-            $param_des = $Description;
+            $param_des = $EventDescription;
             $param_image = $newfilename;
             $param_date = $EventDate;
 
@@ -136,9 +146,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <label>Event Name</label> <input type="text" name="EventName" class="form-control <?php echo (!empty($EventName_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $EventName; ?>"> <span class="invalid-feedback"><?php echo $EventName_err; ?></span>
                         </div>
                         <div class="form-group">
-                            <label>Description</label>
-                            <textarea name="Description" class="form-control <?php echo (!empty($Description_err)) ? 'is-invalid' : ''; ?>"></textarea>
-                            <span class="invalid-feedback"><?php echo $Description_err; ?></span>
+                            <label>Event Description</label>
+                            <textarea name="EventDescription" class="form-control <?php echo (!empty($EventDescription_err)) ? 'is-invalid' : ''; ?>"></textarea>
+                            <span class="invalid-feedback"><?php echo $EventDescription_err; ?></span>
                         </div>
                         <div class="form-group">
                             <label>Event Image</label> <input type="file" name="EventImage" class="form-control <?php echo (!empty($EventImage_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $EventImage; ?>"> <span class="invalid-feedback"><?php echo $EventImage_err; ?></span>

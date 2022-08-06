@@ -1,3 +1,13 @@
+<!--Page Name: update.php
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Updates an admin's password.
+ -->
+
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -24,7 +34,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     $id = $_POST["id"];
     $currentHashedPassword = "";
 
-    $sql = "SELECT * FROM admins WHERE AdminID = ?";
+    $sql = "SELECT * FROM Admins WHERE AdminID = ?";
     if ($stmt = mysqli_prepare($link, $sql)) {
         // Set parameters
         $param_id = $id;
@@ -67,24 +77,35 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $NewPassword_err = "Please enter the new password";
     } elseif (password_verify($input_new_password, $currentHashedPassword)) {
         $NewPassword_err = "Please enter a password that's different from your current password";
+    } elseif (strlen($input_new_password) < '8') {
+        $NewPassword_err = "Your Password Must Contain At Least 8 Characters!";
+    } elseif (!preg_match("#[0-9]+#", $input_new_password)) {
+        $NewPassword_err = "Your Password Must Contain At Least 1 Number!";
+    } elseif (!preg_match("#[A-Z]+#", $input_new_password)) {
+        $NewPassword_err = "Your Password Must Contain At Least 1 Capital Letter!";
+    } elseif (!preg_match("#[a-z]+#", $input_new_password)) {
+        $NewPassword_err = "Your Password Must Contain At Least 1 Lowercase Letter!";
     } else {
         $NewPassword = $input_new_password;
     }
 
     // Huy: Validate new confirmed password
     $input_new_confirmed_password = trim($_POST["NewConfirmedPassword"]);
-    if (empty($input_new_confirmed_password)) {
-        $NewConfirmedPassword_err = "Please enter the new confirmed password";
-    } elseif (strcmp($input_new_password, $input_new_confirmed_password) != 0) {
-        $NewConfirmedPassword_err = "New password not matching";
-    } else {
-        $NewConfirmedPassword = $input_new_confirmed_password;
+    if (!empty($NewPassword)) {
+        if (empty($input_new_confirmed_password)) {
+            $NewConfirmedPassword_err = "Please enter the new confirmed password";
+        } elseif (strcmp($input_new_password, $input_new_confirmed_password) != 0) {
+            $NewConfirmedPassword_err = "New password not matching";
+        } else {
+            $NewConfirmedPassword = $input_new_confirmed_password;
+        }
     }
+
 
     // Check input errors before inserting in database
     if (empty($CurrentPassword_err) && empty($NewPassword_err) && empty($NewConfirmedPassword_err)) {
         // Prepare an update statement
-        $sql = "UPDATE admins SET Password = ? WHERE AdminID = ?";
+        $sql = "UPDATE Admins SET Password = ? WHERE AdminID = ?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
 
@@ -116,7 +137,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $id =  trim($_GET["id"]);
 
         // Prepare a select statement
-        $sql = "SELECT * FROM resources WHERE ResourceID = ?";
+        $sql = "SELECT * FROM Resources  WHERE ResourceID = ?";
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
             // Set parameters

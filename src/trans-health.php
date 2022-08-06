@@ -1,3 +1,14 @@
+<!--Page Name: about-us.php
+	
+    By: Ghaith Ali
+    Student ID: 040994718
+    Professor: Leanne Seaward
+	  Client: Charlie Dazé 
+    Prototype: 1
+    Purpose: This page is display information regarding navigating the trans health system for users.
+    Functions: Shows guide to navigating the trans health system.
+ -->
+
 <!DOCTYPE html>
 <html>
 
@@ -89,7 +100,7 @@
           <a class="nav-item nav-link" href="../index.php">Home</a>
           <a class="nav-item nav-link active" href="./trans-health.php" style="color: white;">Navigating Trans Health</a>
           <a class="nav-item nav-link" href="./about-us.php">About Us</a>
-          <a class="nav-item nav-link" href="./admin-login.php">Login (for admins only)</a>
+          <a class="nav-item nav-link" href="./admin-login.php">Login (for Admins only)</a>
         </div>
       </div>
     </nav>
@@ -313,9 +324,9 @@
 <footer id="footer">
   <div class="container">
     <p class="float-right">
-      <i class="fa-brands fa-twitter-square"></i> &nbsp;
-      <i class="fa-brands fa-instagram"></i> &nbsp;
-      <i class="fa-brands fa-facebook-square"></i> &nbsp;
+      <a href="https://twitter.com/tenoaksproject?lang=en" style="color: inherit" target=”_blank”><i class="fa-brands fa-twitter-square"></i></a> &nbsp;
+      <a href="https://www.instagram.com/tenoaksproject/?hl=en" style="color: inherit" target=”_blank”> <i class="fa-brands fa-instagram"></i></a> &nbsp;
+      <a href="https://www.facebook.com/TenOaks/" style="color: inherit" target=”_blank”><i class="fa-brands fa-facebook-square"></i></a> &nbsp;
     </p>
     <p>Ten Oaks Link</p>
   </div>

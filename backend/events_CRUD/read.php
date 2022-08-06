@@ -1,9 +1,18 @@
+<!--Page Name: read.php
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Shows information of just 1 event.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
-  header("location: ../../src/admin-login.php");
-  exit;
-} 
+    header("location: ../../src/admin-login.php");
+    exit;
+}
 ?>
 
 <?php
@@ -15,7 +24,7 @@ if (isset($_GET["id"]) && !empty($id)) {
     require_once "../shared/config.php";
 
     // Prepare a select statement
-    $sql = "SELECT * FROM sections WHERE SectionID = ?";
+    $sql = "SELECT * FROM Events WHERE EventID = ?";
 
     if ($stmt = mysqli_prepare($link, $sql)) {
 
@@ -37,12 +46,13 @@ if (isset($_GET["id"]) && !empty($id)) {
                 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
                 // Retrieve individual field value
-                $SectionID = $row["SectionID"];
-                $SectionName = $row["SectionName"];
-                $Description = $row["SectionDescription"];
-
+                $EventID = $row["EventID"];
+                $EventName = $row["EventName"];
+                $EventDescription = $row["EventDescription"];
+                $EventImage = $row["EventImage"];
+                $EventDate = $row["EventDate"];
             } else {
-                // URL doesn't contain valid id parameter. Redirect to error page
+                //URL doesn't contain valid id parameter. Redirect to error page
                 header("location: ../shared/error.php");
                 exit();
             }
@@ -65,51 +75,67 @@ if (isset($_GET["id"]) && !empty($id)) {
 
 
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>View Events</title>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-.wrapper {
-	width: 600px;
-	margin: 0 auto;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>View Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .wrapper {
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
-	<div class="wrapper">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="mt-5 mb-3">View Events</h1>
-					<div class="form-group">
-                    
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mt-5 mb-3">View Events</h1>
                     <div class="form-group">
-						<label>SectionID</label>
-						<p>
-							<b><?php echo $row["SectionID"]; ?></b>
-						</p>
-					</div>
-                    <div class="form-group">
-						<label>SectionName</label>
-						<p>
-							<b><?php echo $row["SectionName"]; ?></b>
-						</p>
-					</div>
-                     <div class="form-group">
-						<label>Description</label>
-						<p>
-							<b><?php echo $row["SectionDescription"]; ?></b>
-						</p>
-					</div>
-					
-					<p>
-						<a href="index.php" class="btn btn-primary">Back</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+
+                        <div class="form-group">
+                            <label>EventID</label>
+                            <p>
+                                <b><?php echo $row["EventID"]; ?></b>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label>Event Name</label>
+                            <p>
+                                <b><?php echo $row["EventName"]; ?></b>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <p>
+                                <b><?php echo $row["EventDescription"]; ?></b>
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Event Image</label>
+                            <br>
+                            <?php echo "<img src=\"../../assets/images/" . $row['EventImage'] . "\" alt=\"\" height=\"150\" >" ?>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Event Date</label>
+                            <p>
+                                <b><?php echo $row["EventDate"]; ?></b>
+                            </p>
+                        </div>
+
+
+                        <p>
+                            <a href="index.php" class="btn btn-primary">Back</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>

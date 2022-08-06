@@ -1,19 +1,28 @@
+<!--Page Name: read.php
+    By: Tom Cui.
+    Student ID: 040981835.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Reads a resource.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
-  header("location: ../../src/admin-login.php");
-  exit;
-} 
+    header("location: ../../src/admin-login.php");
+    exit;
+}
 ?>
 
 <?php
 // Check existence of id parameter before processing further
-if (isset($_GET["id"]) && ! empty($_GET["id"])) {
+if (isset($_GET["id"]) && !empty($_GET["id"])) {
     // Include config file
     require_once "../shared/config.php";
 
     // Prepare a select statement
-    $sql = "SELECT * FROM resources WHERE ResourceID = ?";
+    $sql = "SELECT * FROM Resources  WHERE ResourceID = ?";
 
     if ($stmt = mysqli_prepare($link, $sql)) {
 
@@ -70,36 +79,37 @@ if (isset($_GET["id"]) && ! empty($_GET["id"])) {
 
 
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>View Resources</title>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-.wrapper {
-	width: 600px;
-	margin: 0 auto;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>View Resources</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .wrapper {
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
-	<div class="wrapper">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="mt-5 mb-3">View Resources</h1>
-					<div class="form-group">
-						<label>ResourceID</label>
-						<p>
-							<b><?php echo $row["ResourceID"]; ?></b>
-						</p>
-					</div>
-					<div class="form-group">
-						<label>ResourceName</label>
-						<p>
-							<b><?php echo $row["ResourceName"]; ?></b>
-						</p>
-					</div>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mt-5 mb-3">View Resources</h1>
+                    <div class="form-group">
+                        <label>ResourceID</label>
+                        <p>
+                            <b><?php echo $row["ResourceID"]; ?></b>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>ResourceName</label>
+                        <p>
+                            <b><?php echo $row["ResourceName"]; ?></b>
+                        </p>
+                    </div>
                     <?php //Tom: check for NULL values for fows, if NULL, don't display the rows.
                     if ($row["Phone"] != null) {
                         echo '<div class="form-group">';
@@ -164,24 +174,25 @@ if (isset($_GET["id"]) && ! empty($_GET["id"])) {
                         echo '</div>';
                     }
                     ?>
-                     <div class="form-group">
-						<label>Description</label>
-						<p>
-							<b><?php echo $row["Description"]; ?></b>
-						</p>
-					</div>
-					<div class="form-group">
-						<label>SectionID</label>
-						<p>
-							<b><?php echo $row["SectionID"]; ?></b>
-						</p>
-					</div>
-					<p>
-						<a href="index.php" class="btn btn-primary">Back</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <p>
+                            <b><?php echo $row["Description"]; ?></b>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>SectionID</label>
+                        <p>
+                            <b><?php echo $row["SectionID"]; ?></b>
+                        </p>
+                    </div>
+                    <p>
+                        <a href="index.php" class="btn btn-primary">Back</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

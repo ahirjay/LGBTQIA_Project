@@ -1,3 +1,12 @@
+<!--Page Name: index.php
+    By: Yitao Cui.
+    Student ID: 040981835.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Error handling page.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -25,7 +34,7 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="mt-5 mb-3">Invalid Request</h2>
-                    <div class="alert alert-danger">Sorry, you've made an invalid request. Please <a href="index.php" class="alert-link">go back</a> and try again.</div>
+                    <div class="alert alert-danger">Sorry, you've made an invalid request. Please <a href="../index.php" class="alert-link">go back</a> and try again.</div>
                 </div>
             </div>        
         </div>

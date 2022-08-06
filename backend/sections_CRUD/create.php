@@ -1,3 +1,12 @@
+<!--Page Name: create.php
+    By: Huy Vo.
+    Student ID: 040993746.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Creates a section.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -43,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Tom: Check input errors before inserting in database
     if (empty($SectionName_err) && empty($Description_err)) {
         // Prepare an insert statement
-        $sql = "INSERT INTO sections (SectionName, SectionDescription) VALUES (?, ?)";
+        $sql = "INSERT INTO Sections (SectionName, SectionDescription) VALUES (?, ?)";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
 

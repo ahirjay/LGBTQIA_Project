@@ -1,3 +1,12 @@
+<!--Page Name: delete.php
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Deletes an admin.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -20,7 +29,7 @@ if (isset($_POST["submit"]) && !empty($_POST["submit"])) {
 	require_once("../shared/config.php");
 
 	// Prepare a delete statement
-	$sql = "DELETE FROM admins WHERE AdminID = ?";
+	$sql = "DELETE FROM Admins WHERE AdminID = ?";
 
 	if ($stmt = mysqli_prepare($link, $sql)) {
 		// Set parameters
@@ -32,7 +41,7 @@ if (isset($_POST["submit"]) && !empty($_POST["submit"])) {
 		// Attempt to execute the prepared statement
 		if (mysqli_stmt_execute($stmt)) {
 			// Records deleted successfully. Redirect to landing page
-			$sql = "SET @count = 0; UPDATE admins SET AdminID = @count:= @count + 1; ALTER TABLE admins AUTO_INCREMENT = 1;";
+			$sql = "SET @count = 0; UPDATE Admins SET AdminID = @count:= @count + 1; ALTER TABLE Admins AUTO_INCREMENT = 1;";
 			if ($result = mysqli_multi_query($link, $sql)) {
 				header("location: ../index.php");
 				exit();
@@ -78,7 +87,7 @@ if (isset($_POST["submit"]) && !empty($_POST["submit"])) {
 							<input type="hidden" name="ResourceID" value="<?php echo trim($_GET["id"]); ?>" />
 							<p>Are you sure you want to delete this admin?</p>
 							<p>
-								<input type="hidden" value="<?php echo $_GET["id"] ?>" name="submit" id="submit"> 
+								<input type="hidden" value="<?php echo $_GET["id"] ?>" name="submit" id="submit">
 								<input type="submit" value="Yes" class="btn btn-danger"> <a href="../index.php" class="btn btn-secondary">No</a>
 							</p>
 						</div>

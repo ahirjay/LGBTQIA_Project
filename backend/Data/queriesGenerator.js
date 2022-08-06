@@ -79,7 +79,7 @@ fs.readFile("./data.txt", (error, data) => {
     }
     
     for (const resource of resources) {
-        let insertQuery = "INSERT INTO `resources` (`ResourceName`";
+        let insertQuery = "INSERT INTO `Resources ` (`ResourceName`";
 
         for (const property in resource) {
             if (property == "id" || property == "name" || property == "sectionName" || property == "sectionDescription") {

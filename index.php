@@ -9,7 +9,6 @@
     Functions: Page has been divided to show events. It also has a form for user to subscribe to upcoming events.
  -->
 
-
 <!DOCTYPE html>
 <html>
 
@@ -97,10 +96,6 @@
       padding: 30px;
     }
 
-    .navbar {
-      
-    }
-
     .logo img {
       position: absolute;
       top: 10px;
@@ -152,7 +147,7 @@
           <a class="nav-item nav-link active" href="./index.php" style="color: white;">Home</a>
           <a class="nav-item nav-link" href="./src/trans-health.php">Navigating Trans Health</a>
           <a class="nav-item nav-link" href="./src/about-us.php">About Us</a>
-          <a class="nav-item nav-link" href="./src/admin-login.php">Login (for admins only)</a>
+          <a class="nav-item nav-link" href="./src/admin-login.php">Login (for Admins only)</a>
         </div>
       </div>
     </nav>
@@ -186,7 +181,7 @@
 
       if (isset($_GET['searchterm']) && trim($_GET['searchterm']) != "") {
         $param_id = trim($_GET["searchterm"]);
-        $sql = $sql = "SELECT * FROM resources WHERE ResourceName LIKE '%$param_id%' OR Description LIKE '%$param_id%'";
+        $sql = $sql = "SELECT * FROM Resources  WHERE ResourceName LIKE '%$param_id%' OR Description LIKE '%$param_id%'";
         $stmt = mysqli_prepare($link, $sql);
 
         if (mysqli_stmt_execute($stmt)) {
@@ -364,7 +359,7 @@
 
 
       // Attempt select query execution
-      $sql = "SELECT * FROM events ORDER BY EventDate LIMIT 3";
+      $sql = "SELECT * FROM Events ORDER BY EventDate LIMIT 3";
       if ($result = mysqli_query($link, $sql)) {
         if (mysqli_num_rows($result) > 0) {
 
@@ -427,9 +422,9 @@
 <footer id="footer">
   <div class="container">
     <p class="float-right">
-      <i class="fa-brands fa-twitter-square"></i> &nbsp;
-      <i class="fa-brands fa-instagram"></i> &nbsp;
-      <i class="fa-brands fa-facebook-square"></i> &nbsp;
+      <a href="https://twitter.com/tenoaksproject?lang=en" style="color: inherit" target=”_blank”><i class="fa-brands fa-twitter-square"></i></a> &nbsp;
+      <a href="https://www.instagram.com/tenoaksproject/?hl=en" style="color: inherit" target=”_blank”> <i class="fa-brands fa-instagram"></i></a> &nbsp;
+      <a href="https://www.facebook.com/TenOaks/" style="color: inherit" target=”_blank”><i class="fa-brands fa-facebook-square"></i></a> &nbsp;
     </p>
     <p>Ten Oaks Link</p>
   </div>

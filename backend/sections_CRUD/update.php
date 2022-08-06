@@ -1,3 +1,12 @@
+<!--Page Name: update.php
+    By: Huy Vo.
+    Student ID: 040993746.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Updates a section.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -49,7 +58,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Check input errors before inserting in database
     if (empty($SectionName_err) && empty($Description_err)) {
         // Prepare an update statement
-        $sql = "UPDATE sections SET SectionName=?, SectionDescription=? WHERE SectionID=?";
+        $sql = "UPDATE Sections SET SectionName=?, SectionDescription=? WHERE SectionID=?";
          
         if($stmt = mysqli_prepare($link, $sql)){
             
@@ -83,7 +92,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     if(isset($_GET["id"]) && !empty($id)){
 
         // Prepare a select statement
-        $sql = "SELECT * FROM sections WHERE SectionID = ?";
+        $sql = "SELECT * FROM Sections WHERE SectionID = ?";
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             // Set parameters

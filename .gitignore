@@ -1,3 +1,7 @@
 backend/Data/node_modules
+.settings/
+.vs/
+.project 
+.buildpath
 
 

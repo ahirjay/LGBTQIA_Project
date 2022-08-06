@@ -1,3 +1,12 @@
+<!--Page Name: index.php
+    By: Huy Vo.
+    Student ID: 040993746.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Shows all sections.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -65,7 +74,7 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
                     require_once "../shared/config.php";
 
                     // Attempt select query execution
-                    $sql = "SELECT * FROM sections ORDER BY SectionID"; // Tom : changed from $sql = "SELECT * FROM employee"
+                    $sql = "SELECT * FROM Sections ORDER BY SectionID"; // Tom : changed from $sql = "SELECT * FROM employee"
                     if ($result = mysqli_query($link, $sql)) {
                         if (mysqli_num_rows($result) > 0) {
                             echo '<table class="table table-bordered table-striped">';

@@ -1,3 +1,12 @@
+<!--Page Name: update.php
+    By: Huy Vo
+    Student ID: 040993746
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Updates an event.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -11,54 +20,72 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
 require_once "../shared/config.php";
  
 // Define variables and initialize with empty values
-// Tom: changed iniaial variables and error
-$SectionName = $Phone = $Email = $Website = $Advocacy = $Outreach = $CommunityCare = $Text = $Description = $SectionID = "";
-$SectionName_err = $PhoneNumber_err = $Email_err = $Website_err = $Advocacy_err = $Outreach_err = $CommunityCare_err = $TextLine_err = $Description_err = $SectionID_err = "";
-
+// Changed iniaial variables and error
+$EventName = $EventDescription = $EventImage = $EventDate = "";
+$EventName_err = $EventDescription_err = $EventImage_err = $EventDate_err = "";
  
 // Processing form data when form is submitted
 if(isset($_POST["id"]) && !empty($_POST["id"])){
-    
-    
     // Get hidden input value
     $id = $_POST["id"];
     
-    // Tom: Validate name
-    $input_name = trim($_POST["SectionName"]);
+    // Validate name
+    $input_name = trim($_POST["EventName"]);
     if (empty($input_name)) {
-        $SectionName_err = "Please enter the section name.";
+        $EventName_err = "Please enter the event name.";
     } elseif (! filter_var($input_name, FILTER_VALIDATE_REGEXP, array(
         "options" => array(
             "regexp" => "/^[a-zA-Z\s]+$/"
         )
     ))) {
-        $SectionName_err = "Please enter a valid name.";
+        $EventName_err = "Please enter a valid name.";
     } else {
-        $SectionName = $input_name;
+        $EventName = $input_name;
     }
 
-    // Tom: Validate Description
-    $input_description = trim($_POST["Description"]);
+    // Validate EventDescription
+    $input_description = trim($_POST["EventDescription"]);
     if (empty($input_description)) {
-        $Description_err = "Please enter some Description.";
-        // $Description = NULL;
+        $Description_err = "Please enter some EventDescription.";
+        // $EventDescription = NULL;
     } else {
-        $Description = $input_description;
+        $EventDescription = $input_description;
+    }
+
+    // Uploading variables
+    $targetDir = "../../assets/images/";
+    $fileName = $targetFilePath = $allowTypes = "";
+
+    if (empty($_FILES["EventImage"]["name"])) {
+        $EventImage_err = "Please select at least 1 file to upload.";
+    } else {
+        $fileName = basename($_FILES["EventImage"]["name"]);
+        $temp = explode(".", $_FILES["EventImage"]["name"]);
+        $newfilename = uniqid('img_').end($temp);
+        $targetFilePath = $targetDir . $newfilename;
+        $fileType = strtolower(end($temp));
+        $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
+        //Huy: Handling Image Uploading
+        if (!in_array($fileType, $allowTypes)) {
+            $EventImage_err = "Please choose a valid file (only JPG, JPEG, PNG, GIF, & PDF files are accepted.";
+        }
     }
     
     // Check input errors before inserting in database
-    if (empty($SectionName_err) && empty($Description_err)) {
+    if (empty($EventName_err) && empty($EventDescription_err) && empty($EventImage_err) && empty($EventDate_err)) {
         // Prepare an update statement
-        $sql = "UPDATE sections SET SectionName=?, SectionDescription=? WHERE SectionID=?";
+        $sql = "UPDATE Events SET EventName=?, EventDescription=?, EventImage=?, EventDate=? WHERE EventID=?";
          
         if($stmt = mysqli_prepare($link, $sql)){
             
             // Set parameters
-            $param_name = $SectionName;
-            $param_des = $Description;
+            $param_name = $EventName;
+            $param_des = $EventDescription;
+            $param_img = $EventImage;
+            $param_date = $EventDate;
 
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssi", $param_name, $param_des, $id);
+            mysqli_stmt_bind_param($stmt, "ssssi", $param_name, $param_des, $param_img, $param_date, $id);
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
@@ -70,11 +97,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             }
             // Close statement
             mysqli_stmt_close($stmt);
-        }
-         
-        
+        }   
     }
-    
+
     // Close connection
     mysqli_close($link);
 } else{
@@ -83,7 +108,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     if(isset($_GET["id"]) && !empty($id)){
 
         // Prepare a select statement
-        $sql = "SELECT * FROM sections WHERE SectionID = ?";
+        $sql = "SELECT * FROM Events WHERE EventID = ?";
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             // Set parameters
@@ -100,8 +125,8 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     contains only one row, we don't need to use while loop */
                     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     // Retrieve individual field value
-                    $SectionName = $row["SectionName"];
-                    $Description = $row["SectionDescription"];
+                    $EventName = $row["EventName"];
+                    $EventDescription = $row["EventDescription"];
 
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
@@ -150,16 +175,16 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
                         <div class="form-group">
 							<label></label> <input type="text"
-								name="SectionName"
-								class="form-control <?php echo (!empty($SectionName_err)) ? 'is-invalid' : ''; ?>"
-								value="<?php echo $SectionName; ?>"> <span
-								class="invalid-feedback"><?php echo $SectionName_err;?></span>
+								name="EventName"
+								class="form-control <?php echo (!empty($EventName_err)) ? 'is-invalid' : ''; ?>"
+								value="<?php echo $EventName; ?>"> <span
+								class="invalid-feedback"><?php echo $EventName_err;?></span>
 						</div>
 						
 						<div class="form-group">
-							<label>Description</label>
-							<textarea name="Description"
-								class="form-control <?php echo (!empty($Description_err)) ? 'is-invalid' : ''; ?>"><?php echo $Description?></textarea>
+							<label>EventDescription</label>
+							<textarea name="EventDescription"
+								class="form-control <?php echo (!empty($Description_err)) ? 'is-invalid' : ''; ?>"><?php echo $EventDescription?></textarea>
 							<span class="invalid-feedback"><?php echo $Description_err;?></span>
 						</div>
 						

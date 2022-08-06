@@ -1,3 +1,12 @@
+<!--Page Name: index.php
+    By: Tom Cui.
+    Student ID: 040981835.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Shows all resources.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {

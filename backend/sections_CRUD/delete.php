@@ -1,3 +1,12 @@
+<!--Page Name: delete.php
+    By: Huy Vo.
+    Student ID: 040993746.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Deletes a section.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -20,7 +29,7 @@ if (isset($_POST["submit"]) && ! empty($_POST["submit"])) {
     require_once ("../shared/config.php");
 
     // Prepare a delete statement
-    $sql = "DELETE FROM sections WHERE SectionID = ?";
+    $sql = "DELETE FROM Sections WHERE SectionID = ?";
 
     if ($stmt = mysqli_prepare($link, $sql)) {
         // Set parameters

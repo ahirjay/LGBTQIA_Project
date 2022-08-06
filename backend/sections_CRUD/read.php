@@ -1,3 +1,12 @@
+<!--Page Name: read.php
+    By: Huy Vo.
+    Student ID: 040993746.
+    Professor: Leanne Seaward
+	Client: Charlie Dazé 
+    Prototype: 2
+    Purpose: Reads a section.
+ -->
+
 <?php
 session_start();
 if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
@@ -15,7 +24,7 @@ if (isset($_GET["id"]) && !empty($id)) {
     require_once "../shared/config.php";
 
     // Prepare a select statement
-    $sql = "SELECT * FROM sections WHERE SectionID = ?";
+    $sql = "SELECT * FROM Sections WHERE SectionID = ?";
 
     if ($stmt = mysqli_prepare($link, $sql)) {
 
