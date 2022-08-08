@@ -152,7 +152,9 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     // Check input errors before inserting in database
     if (empty($ResourceName_err) && empty($SectionID_err) && empty($PhoneNumber_err) && empty($Email_err) && empty($Website_err) && empty($Advocacy_err) && empty($Outreach_err) && empty($CommunityCare_err) && empty($TextLine_err) && empty($Description_err)) {
         // Prepare an update statement
-        $sql = "UPDATE resources SET ResourceName=?, Phone=?, Email=?, Website=?, Advocacy=?, Outreach=?, CommunityCare=?, Text=?, Description=?, SectionID=? WHERE ResourceID=?";
+
+        $sql = "UPDATE Resources SET ResourceName=?, Phone=?, Email=?, Website=?, Advocacy=?, Outreach=?, CommunityCare=?, Text=?, Description=?, SectionID=? WHERE ResourceID=?";
+
 
         if ($stmt = mysqli_prepare($link, $sql)) {
 

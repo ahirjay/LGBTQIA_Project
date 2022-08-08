@@ -285,7 +285,7 @@
                 <li>HRT is covered under OHIP+ (provincial healthcare coverage for folks under age 25).</li>
                 <ul>
                   <li>You may need to file an EAP (Exceptional Access Program) form to receive this coverage for HRT. Your doctor can file on your behalf.</li>
-                  <li><a href="">https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx</a></li>
+                  <li><a href="https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx">https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx</a></li>
                 </ul>
               </ul>
               </p>
@@ -309,7 +309,7 @@
                 <li>Referral from another doctor/agency isn't necessary to access the Connect-Clinic, but
                   they do accept referrals if you ever need a community member/organization to speak on
                   your behalf</li>
-                <li><a href=""> The website is available here: https://www.connect-clinic.com/</a></li>
+                <li> The website is available here: <a href="https://www.connect-clinic.com/"> https://www.connect-clinic.com/</a></li>
               </ul>
               </p>
             </div>

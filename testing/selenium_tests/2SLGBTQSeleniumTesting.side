@@ -1,0 +1,3224 @@
+{
+  "id": "03259e2d-9d89-4d9f-b4c2-842f28ff0a0a",
+  "version": "2.0",
+  "name": "2SLGBTQ",
+  "url": "http://booleanautocrats.epizy.com/backend/index.php",
+  "tests": [{
+    "id": "2d2db041-a32a-4a6c-b3d5-a9f4c281096c",
+    "name": "Link to Twitter",
+    "commands": [{
+      "id": "50483b50-08c5-4c22-a763-fa7d92d04d2a",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d13cc114-789d-41d0-be0d-38f7b50b04ef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f234585-524c-4f9d-a20c-3d182659b5ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-twitter-square",
+      "targets": [
+        ["css=.fa-twitter-square", "css:finder"],
+        ["xpath=//footer[@id='footer']/div/p/a/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7484",
+      "windowTimeout": 2000
+    }, {
+      "id": "52bdc906-ccd0-4516-bdf4-a05c56bd4c61",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7484}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0dbfda44-3773-4d72-8582-41e736e06cae",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai",
+      "targets": [
+        ["css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02d8e35a-ac74-40ec-83be-24605471f103",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai",
+      "targets": [
+        ["css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a48179-43a5-440b-8857-06e91b423d90",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai .css-9pa8cd",
+      "targets": [
+        ["css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai .css-9pa8cd", "css:finder"],
+        ["xpath=//img[contains(@src,'https://pbs.twimg.com/profile_banners/112866161/1633547009/600x200')]", "xpath:img"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/a/div/div[2]/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93bc833b-5fc3-4dfc-a54d-f8cdc9ee1540",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai .css-9pa8cd",
+      "targets": [
+        ["css=.css-4rbku5 > .css-1dbjc4n > .r-1p0dtai .css-9pa8cd", "css:finder"],
+        ["xpath=//img[contains(@src,'https://pbs.twimg.com/profile_banners/112866161/1633547009/600x200')]", "xpath:img"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/a/div/div[2]/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "209d6498-0380-4b27-943d-7928590db583",
+      "comment": "Twitter link test",
+      "command": "assertText",
+      "target": "css=.css-4rbku5 > .css-1dbjc4n > .css-1dbjc4n .css-901oao > .css-901oao > .css-901oao",
+      "targets": [
+        ["css=.css-4rbku5 > .css-1dbjc4n > .css-1dbjc4n .css-901oao > .css-901oao > .css-901oao", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/h2/div/div/div/div/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span", "xpath:position"]
+      ],
+      "value": "Ten Oaks Project"
+    }]
+  }, {
+    "id": "b08b0904-b0b4-4a72-a713-29b692a987b9",
+    "name": "checking social supports button",
+    "commands": [{
+      "id": "17091909-fe48-4858-a230-3cbe44fb7a3e",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03e7ead0-20dd-4f51-a3d8-eb43aa734e90",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "726x714",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74a49889-5a2d-4b1f-9639-a9b1bcb559c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=button1",
+      "targets": [
+        ["id=button1", "id"],
+        ["css=#button1", "css:finder"],
+        ["xpath=//button[@id='button1']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'See more Social Supports')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea6096fa-10a9-4156-a861-3345437be39b",
+      "comment": "check social supports button",
+      "command": "assertText",
+      "target": "css=.row:nth-child(8) .card-title",
+      "targets": [
+        ["css=.row:nth-child(8) .card-title", "css:finder"],
+        ["xpath=//div[@id='SeeMore1']/div[8]/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'LGBT Youthline')]", "xpath:innerText"]
+      ],
+      "value": "LGBT Youthline"
+    }]
+  }, {
+    "id": "eaeb320c-2339-4063-938a-6af129eb834d",
+    "name": "check see more transition supports",
+    "commands": [{
+      "id": "a8444956-cec2-49c2-a69e-0bb5ab0d68fd",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71fb3985-2ae6-4500-ac6f-aeda61714fd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "726x714",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "accd3fec-143c-4987-9e16-0523691c63d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=button3",
+      "targets": [
+        ["id=button3", "id"],
+        ["css=#button3", "css:finder"],
+        ["xpath=//button[@id='button3']", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'See more Transition Supports')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b8b692-0532-432b-8c94-fd756c4a9825",
+      "comment": "checking transition resources button",
+      "command": "assertText",
+      "target": "css=#SeeMore3 > .row:nth-child(1) .card-title",
+      "targets": [
+        ["css=#SeeMore3 > .row:nth-child(1) .card-title", "css:finder"],
+        ["xpath=//div[@id='SeeMore3']/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Affirming Gear')]", "xpath:innerText"]
+      ],
+      "value": "Affirming Gear"
+    }]
+  }, {
+    "id": "7f72d0d5-d6bb-4fcd-9d85-62065aae039e",
+    "name": "checking mental supports button",
+    "commands": [{
+      "id": "eb5d226d-459b-4ed0-b0db-1fdb1c8c3860",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ec1654a-3bea-4d6e-9b48-575727d6c5be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "726x714",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06453a01-cfdc-41c7-95f8-a77823c36ff5",
+      "comment": "",
+      "command": "click",
+      "target": "id=button2",
+      "targets": [
+        ["id=button2", "id"],
+        ["css=#button2", "css:finder"],
+        ["xpath=//button[@id='button2']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'See more Mental Health Supports')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e46504f-c833-45df-ab6c-8de36e3f08f5",
+      "comment": "Checking mental health supports",
+      "command": "assertText",
+      "target": "css=#SeeMore2 > .row:nth-child(1) .card-title",
+      "targets": [
+        ["css=#SeeMore2 > .row:nth-child(1) .card-title", "css:finder"],
+        ["xpath=//div[@id='SeeMore2']/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Counselling Connect')]", "xpath:innerText"]
+      ],
+      "value": "Counselling Connect"
+    }]
+  }, {
+    "id": "8549cb82-2204-47e7-9c67-49eda5a6e8e6",
+    "name": "admin login",
+    "commands": [{
+      "id": "12ee58e0-4089-49ff-a667-4a2e3ea73afd",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "087ecf7f-aec9-4b02-870c-2bee36ce12f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4d2ece3-c3ce-4e90-80f8-dea98cb78cb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c03043a-4b89-4f94-9653-ed2bc51aa4c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.txt_field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed4e8e4c-3c6f-40fb-a85d-c64458a7dd7e",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.txt_field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "40efd428-766a-4614-b2ea-7558594e512e",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.txt_field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7d24e4b-31bc-4c15-bf83-f70eeff33389",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.txt_field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "thisisastrongpassword"
+    }, {
+      "id": "011f43b0-42ed-4da9-a690-dd10c0dd9e1b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.txt_field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "380c9908-914f-4106-850c-70ff1eeca02d",
+      "comment": "checking admin login",
+      "command": "assertText",
+      "target": "css=.pull-left",
+      "targets": [
+        ["css=.pull-left", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome back username')]", "xpath:innerText"]
+      ],
+      "value": "Welcome back username"
+    }]
+  }, {
+    "id": "1fb64ec4-27e1-48d0-8cc9-650717b24a1f",
+    "name": "Link to Instagram",
+    "commands": [{
+      "id": "29d51dcc-58fb-4602-bcbb-177cd223451a",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b461bfa6-218f-4c88-b1c0-93e7d0b830d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc184b17-812c-420c-8e3d-3cdc70489927",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-instagram",
+      "targets": [
+        ["css=.fa-instagram", "css:finder"],
+        ["xpath=//footer[@id='footer']/div/p/a[2]/i", "xpath:idRelative"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5514",
+      "windowTimeout": 2000
+    }, {
+      "id": "5e691188-ceb2-46da-bb6b-69b752d5b7c6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5514}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4e45ea4-5d36-4d5c-92e5-7d93f17a4afa",
+      "comment": "Instagram link ",
+      "command": "assertText",
+      "target": "css=.\\_aad7",
+      "targets": [
+        ["css=.\\_aad7", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_yo']/div/div/div/div/div/div/div/div/div/section/main/div/header/section/div[3]/span", "xpath:idRelative"],
+        ["xpath=//section/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ten Oaks Project')]", "xpath:innerText"]
+      ],
+      "value": "Ten Oaks Project"
+    }]
+  }, {
+    "id": "625a101c-2df8-41eb-9c93-a6c9c27134e9",
+    "name": "Link to Facebook",
+    "commands": [{
+      "id": "572124fc-a2b0-4097-84d4-b9d3b38f0627",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "217dd376-2465-4c13-9b97-0fbe290f7c2b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70b50231-6696-41f4-a3c5-195bac82187e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-facebook-square",
+      "targets": [
+        ["css=.fa-facebook-square", "css:finder"],
+        ["xpath=//footer[@id='footer']/div/p/a[3]/i", "xpath:idRelative"],
+        ["xpath=//a[3]/i", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2817",
+      "windowTimeout": 2000
+    }, {
+      "id": "772d260d-c9be-444b-8c81-051c5a52b03d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2817}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b62c5604-3d47-4181-8c1b-797455f019f8",
+      "comment": "Facebook link",
+      "command": "assertText",
+      "target": "css=.embtmqzv > span",
+      "targets": [
+        ["css=.embtmqzv > span", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_TK']/div/div/div/div[3]/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/h2/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/h2/span/span", "xpath:position"]
+      ],
+      "value": "Ten Oaks Project"
+    }]
+  }, {
+    "id": "c7c6b6d0-18db-4022-8e2c-6b67fd083341",
+    "name": "Navigating Trans Link",
+    "commands": [{
+      "id": "a084e616-bd4d-49cb-b33d-bbfefaf6be4e",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "640e53c8-12a3-456c-bbd1-46eabc5de056",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45f87023-df9d-4c80-bd91-c8362cf485ce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34c84f7c-5222-4599-a85c-a738c5fadf9e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx",
+      "targets": [
+        ["linkText=https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://health.gov.on.ca/en/pro/programs/drugs/eap_mn.aspx')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2030",
+      "windowTimeout": 2000
+    }, {
+      "id": "884bac78-b433-4fa1-ab04-1ed3829199e7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2030}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a00eedf-9957-432c-a6f8-6da5daea520a",
+      "comment": "Trans Health Pharmacy link",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='right-column']/div[3]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Exceptional Access Program')]", "xpath:innerText"]
+      ],
+      "value": "Exceptional Access Program"
+    }]
+  }, {
+    "id": "e24b4a01-f3ec-4443-8dac-7d4216c18559",
+    "name": "Trans Health connect clinic link",
+    "commands": [{
+      "id": "70867841-1ec3-4962-a497-ed8767a40af2",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "030c0fd5-e5b2-4130-b8c3-e232ed01c093",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc92f2fa-3da2-4321-9515-82b10dfbf886",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67309109-7cbb-4e4f-80f4-fa6bad93e76b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=https://www.connect-clinic.com/",
+      "targets": [
+        ["linkText=https://www.connect-clinic.com/", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://www.connect-clinic.com/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.connect-clinic.com/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://www.connect-clinic.com/')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5019",
+      "windowTimeout": 2000
+    }, {
+      "id": "79c6b7e5-a7cb-4485-8cbd-f4a8e83178b2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5019}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6156c1b7-211d-4217-adb1-2efab60fe957",
+      "comment": "connect trans health link",
+      "command": "assertText",
+      "target": "css=#block-yui_3_17_2_1_1559580188583_12526 p",
+      "targets": [
+        ["css=#block-yui_3_17_2_1_1559580188583_12526 p", "css:finder"],
+        ["xpath=//div[@id='block-yui_3_17_2_1_1559580188583_12526']/div/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'OHIP Covered Services')]", "xpath:innerText"]
+      ],
+      "value": "OHIP Covered Services"
+    }]
+  }, {
+    "id": "d7097b40-3724-4427-a329-b298ca48e280",
+    "name": "home to navigating trans health",
+    "commands": [{
+      "id": "76f6828b-a08a-449e-b2ef-b597ebfc7fcb",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42acc2c9-5280-4080-b641-a28dc3ebd380",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1385x757",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d33824c-1c9c-4398-9385-3f0d854ee719",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a94402ec-f85f-414d-9244-5b4bf0daf0ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": "Navigating Trans Health"
+    }]
+  }, {
+    "id": "eb3b0cf7-cfa0-44cf-9fb2-a329f09bcc84",
+    "name": "home to about us",
+    "commands": [{
+      "id": "34b4428c-5d01-4cb2-8187-94b94912d491",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad36bb23-1791-4a14-84ff-c6b141e257f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x758",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bbabc69-f841-4575-bd3c-a828892d0e8f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "166dcc11-d565-4aa8-9368-e6d4fec88c93",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'About Us!')]", "xpath:innerText"]
+      ],
+      "value": "About Us!"
+    }]
+  }, {
+    "id": "93468dfd-a7a0-476e-b2d8-b01baa55ee8a",
+    "name": "home to login",
+    "commands": [{
+      "id": "00a08686-c67e-4177-bee7-a344c204d2c7",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dea00f0-a9cd-420e-bddd-de1e95247aa1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1387x759",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b727bb5-d642-41a3-a15b-d2bd112d0560",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55375e8a-c644-4b78-a622-1b329886f0d6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }]
+  }, {
+    "id": "9c1df76d-520f-4989-a4b4-4843864b3838",
+    "name": "trans health to home",
+    "commands": [{
+      "id": "baa358c4-3ff5-4196-8fd4-6cc58c065def",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8aaff72-2f4b-4ef1-a7b8-609961fe06e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1389x761",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1eac1d11-5030-45a1-81c7-4ff8d4e71972",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ed678fd-e42e-4d88-bcd3-0ed6fc4cec58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '../index.php')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0acb910c-3ad6-41f7-a744-ca4214d3572a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome!')]", "xpath:innerText"]
+      ],
+      "value": "Welcome!"
+    }]
+  }, {
+    "id": "58c027d6-861b-4b76-b2c9-69c2ba9c0afd",
+    "name": "trans health to about us",
+    "commands": [{
+      "id": "7d0fc953-627c-4875-8fb1-6973903e7072",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29da22ff-8afb-468e-84ce-b83273cb9eb6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1390x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f359256-4a01-47e8-a072-c707eb492b86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b17fe1fb-c969-46f0-99a7-3362d4245c2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dec6088-52db-4484-8744-fcf526d3d037",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": "About Us"
+    }]
+  }, {
+    "id": "cbe0efc4-3b2b-4adc-919e-f83276c965d2",
+    "name": "trans health to login",
+    "commands": [{
+      "id": "ca1cc8a1-850b-4662-a80d-ef3799919f16",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78865323-2f83-4a14-8062-848fd31571eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1391x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14b968b5-4639-48ba-909b-742b59dc0509",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d13f5e8-e838-4bd0-9a68-0571dfa230c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc84dc38-b684-4884-bdf2-7dbd5281d084",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }]
+  }, {
+    "id": "48af91ba-462f-4d61-a3e2-eed49c83f642",
+    "name": "about us to home",
+    "commands": [{
+      "id": "1616886a-d1b3-4750-b201-0dc448ff225e",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e43356e9-727e-4a0b-9685-54533e8b90fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1393x765",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9e86a10-3b63-4424-8f98-6f330397b6ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b585311-f1eb-42b6-b9c5-56679af6ef88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '../index.php')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "176805a8-fa85-4b21-bde8-26509f673483",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome!')]", "xpath:innerText"]
+      ],
+      "value": "Welcome!"
+    }]
+  }, {
+    "id": "26cce41e-4c38-4ade-9e35-a14c95ca4104",
+    "name": "about us to trans health",
+    "commands": [{
+      "id": "06bc45c3-3e2d-4a2d-b812-e6310e5cf9c5",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05db3827-993e-46d8-a5d7-d196982894e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1394x767",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eeda129e-573e-4358-a097-1e9bd434e7f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "025fa722-db34-4f1a-805c-ceb390f57d05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2c72ca-b7ab-469b-94cc-89c728dbf7a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": "Navigating Trans Health"
+    }]
+  }, {
+    "id": "aa8d7f71-9fb9-4d27-bc96-7a59be4c0d22",
+    "name": "about us to login",
+    "commands": [{
+      "id": "48c3a22f-a4c0-4625-902e-bc4601aecd00",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a026900-6c21-4f43-8767-c941b60beba4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1395x769",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecda04ae-fdf7-45d6-99ab-53fab242b7cd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3bc2e1-9a57-43b1-9afb-062e31b3a0ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ed358f5-612b-4d4e-9246-3f8fc409750b",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.txt_field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e2949f-fb75-490e-98d7-e4734a26d0e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }]
+  }, {
+    "id": "33c97ed1-1fc9-42c7-b5c1-3e502cd8948c",
+    "name": "login to home",
+    "commands": [{
+      "id": "ada2f75a-78bc-4f51-8d8a-fc90433d8708",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34521660-5521-48f1-9d71-2393e141de47",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1397x771",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1a73b3a-b0b0-45c7-b49a-d909a7724444",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03d4b436-0f77-405e-8d4e-0d988be408f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '../index.php')])[2]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d54e699-9988-4391-a1c7-0bd345b8a120",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome!')]", "xpath:innerText"]
+      ],
+      "value": "Welcome!"
+    }]
+  }, {
+    "id": "64621bb7-fd57-4253-9e85-c89bad34f42e",
+    "name": "login to trans health",
+    "commands": [{
+      "id": "f38ea2eb-1d73-4fc6-932e-1a45ec541502",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f9fa17e-a46a-4457-9619-92e79422b063",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1398x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62f51042-52e0-4335-aa9f-f205fc71ca0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ace987c9-1aed-4bae-a8ce-1288199f24ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Navigating Trans Health",
+      "targets": [
+        ["linkText=Navigating Trans Health", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Navigating Trans Health')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './trans-health.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fb7bddb-9b4b-48d5-b8d7-6c4497143dc1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Navigating Trans Health')]", "xpath:innerText"]
+      ],
+      "value": "Navigating Trans Health"
+    }]
+  }, {
+    "id": "d3db97d2-ccb6-400b-a48e-d95ba7297fd6",
+    "name": "login to about us",
+    "commands": [{
+      "id": "18abf490-1687-43ae-b5f6-8e37818b8e38",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3be51ab-64a8-435b-815f-31129d42262e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1399x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80dbd7a9-ccba-477b-b711-346059b62633",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ab835b9-fbe2-4037-8e91-a5e57c4faff7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=.nav-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './about-us.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20aea1b-1263-4c10-80bf-8f4ed3b81325",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'About Us!')]", "xpath:innerText"]
+      ],
+      "value": "About Us!"
+    }]
+  }, {
+    "id": "8196f194-7841-48bf-be75-246fb56c34ba",
+    "name": "Login Test",
+    "commands": [{
+      "id": "0913fbae-c80f-455a-b583-2b22146c04e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/?i=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bdd46ac-522f-4769-bad1-4feb943219ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1387x759",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9771195d-f398-4da4-a54f-442f90940326",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login (for Admins only)",
+      "targets": [
+        ["linkText=Login (for Admins only)", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login (for Admins only)')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './src/admin-login.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login (for Admins only)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74da1358-c5d3-4b4c-920c-67a7a332771d",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.txt_field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f23ed2c-b055-44af-914a-65f633b6e2c3",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.txt_field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "ff7c9b79-9ac0-4b87-b11f-8ec3bed44d04",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.txt_field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1ce2ce2-6aa7-4f3f-ac13-d342a1d42b25",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.txt_field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "thisisastrongpassword"
+    }, {
+      "id": "7a79fa17-130c-47ff-a30a-e894b710e633",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44315799-cce4-4c5c-acad-13cd2731e7ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.pull-left",
+      "targets": [
+        ["css=.pull-left", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome back username')]", "xpath:innerText"]
+      ],
+      "value": "Welcome back username"
+    }]
+  }, {
+    "id": "41cb1d8c-5278-4961-bf5c-61b3169d1c53",
+    "name": "Add a new admin",
+    "commands": [{
+      "id": "aef93ae8-1e7b-4406-8aad-8436144b80a4",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0caa1241-ba32-4823-86f7-d406bc25392d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1389x761",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "836c9c3a-85e8-45d3-9d0d-1436b1c9d21f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add a New Admin",
+      "targets": [
+        ["linkText=Add a New Admin", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a New Admin')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './admins_CRUD/create.php')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Add a New Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8af9a26-7544-4e0d-be3e-147985b35a53",
+      "comment": "",
+      "command": "click",
+      "target": "name=Firstname",
+      "targets": [
+        ["name=Firstname", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Firstname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "441e5c8e-494a-4780-a91a-cc9dd2df2cb4",
+      "comment": "",
+      "command": "type",
+      "target": "name=Firstname",
+      "targets": [
+        ["name=Firstname", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Firstname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Huy"
+    }, {
+      "id": "667fd31c-440c-46c5-8104-2ad6cfcd2a55",
+      "comment": "",
+      "command": "type",
+      "target": "name=Lastname",
+      "targets": [
+        ["name=Lastname", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Lastname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Vo"
+    }, {
+      "id": "cc7c6ab3-cc46-4bf5-8b63-3bb221ebbc4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "masteruser"
+    }, {
+      "id": "21e94f4a-b7a9-4019-bb9d-fda750ea9faf",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "833a6370-4dd5-4f05-b22c-49a0453ceef8",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "27ad0db3-c8ae-416c-92d7-b09610701046",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1dea22e-c4b5-4acc-ad5e-a9e45748bd5f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 8 Characters!')]", "xpath:innerText"]
+      ],
+      "value": "Your Password Must Contain At Least 8 Characters!"
+    }, {
+      "id": "83caa500-d195-434a-a514-334bf8ab409d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f04b69d5-2e13-4251-8a8b-c6356105144a",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec0eb8a9-2148-4c09-9664-515764c125bb",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1404001-a213-4fa7-b3c7-442cf8091820",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "asdfasdf"
+    }, {
+      "id": "71c5fb9b-2923-4e7d-a51c-f1362e702e3c",
+      "comment": "",
+      "command": "click",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e89cbb19-205b-46d5-96ff-ce37630f26e4",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "asdfadsf"
+    }, {
+      "id": "457f57cc-2dfa-4b29-8411-400292bb345b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4673d80-8060-4e64-905d-a64ebdab9c32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e820e14-15d9-46dd-9122-86ae201d80bc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Number!')]", "xpath:innerText"]
+      ],
+      "value": "Your Password Must Contain At Least 1 Number!"
+    }, {
+      "id": "74f965da-5e4c-4204-bd56-312676113a4a",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90bb7093-992b-4674-b7b1-a7ce93216298",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "asdfasdf1"
+    }, {
+      "id": "869ba138-29d0-4113-8618-862191045444",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(5)",
+      "targets": [
+        ["css=.form-group:nth-child(5)", "css:finder"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e1d0cf1-d07e-41f9-9064-7b35dedc1a29",
+      "comment": "",
+      "command": "click",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0648da82-5366-4e67-911e-0f5ff54b4ea4",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "asdfasdf1"
+    }, {
+      "id": "db99882a-441a-4d6e-bdb5-c3bcc4359b51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ce97638-1ed6-4e0b-8a84-3932951df4eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Capital Letter!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbace69a-25f9-4e42-af83-59695d7cb7d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Capital Letter!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "862333c9-3adc-4a4e-ae3d-615c3ef3878e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Capital Letter!')]", "xpath:innerText"]
+      ],
+      "value": "Your Password Must Contain At Least 1 Capital Letter!"
+    }, {
+      "id": "280d7f02-1e0c-40e4-b73b-c619edd74bf9",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7388df6-902f-400d-8660-29d38d37ea68",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "ASDFASD1"
+    }, {
+      "id": "ed588e5c-6510-4642-82b9-eb495c6ce9c0",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "ASDFASD1"
+    }, {
+      "id": "cdb69be4-5d4c-4e3a-83cb-7c816c7a8a11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c49fd50f-b9f7-46bc-925d-692f1e2a77a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Lowercase Letter!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e52e508-b4e1-4dc2-abc4-885e3c1c4ca1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "217d6556-8117-47a9-a556-b43a8546bdc1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(4) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Lowercase Letter!')]", "xpath:innerText"]
+      ],
+      "value": "Your Password Must Contain At Least 1 Lowercase Letter!"
+    }, {
+      "id": "332a06b1-07d5-4685-8361-7becf634e294",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d01fde3-60a5-408f-bdb2-702246ca4ad4",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "9b2d23a4-0a7b-4eee-afcb-78f10a318d91",
+      "comment": "",
+      "command": "click",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "421d63b4-bc47-4c9e-914b-0e76570633f1",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Asdfasdf"
+    }, {
+      "id": "0452c465-501d-4c40-9365-45f7cf07b96f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35a2cdae-cd2c-490c-a2e2-396e0d601c8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(5) > .invalid-feedback",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(4)", "css:finder"],
+        ["xpath=//tr[2]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'masteruser')]", "xpath:innerText"]
+      ],
+      "value": "Password is not matching. Please confirm again!"
+    }, {
+      "id": "2a767802-42da-4d62-904b-8cb15f6c504d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6e7a304-dfd9-442c-a064-5ce6e42a9240",
+      "comment": "",
+      "command": "click",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f5eb573-f7c9-425a-8938-d6de3af12850",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmedPassword",
+      "targets": [
+        ["name=ConfirmedPassword", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='ConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "1df3c9ac-dc87-447a-b389-180b8946d6ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3848de94-f561-4090-9349-65d6d0f58e68",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(4)", "css:finder"],
+        ["xpath=//tr[2]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'masteruser')]", "xpath:innerText"]
+      ],
+      "value": "masteruser"
+    }]
+  }, {
+    "id": "beb5d530-60c3-46d6-8b5d-d09f6fc58f24",
+    "name": "Update an admin password",
+    "commands": [{
+      "id": "9364c7db-96be-4f94-8f26-0b3bb280effc",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "952b3ce6-9926-4690-a6fc-69f8bd3673e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1393x765",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2255b157-f1bb-4f52-9b40-9e78b80505ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .mr-3 > .fa",
+      "targets": [
+        ["css=tr:nth-child(2) .mr-3 > .fa", "css:finder"],
+        ["xpath=//tr[2]/td[5]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59598cd4-00ec-451e-b2ef-e4004b7f692c",
+      "comment": "",
+      "command": "click",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9385188d-916e-4eab-930c-5f06aab6889e",
+      "comment": "",
+      "command": "type",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "e0dc5b80-43e4-4174-a86e-ee664069beb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1577d73-f02e-457b-897a-8a034cc5c9f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asdfasdf"
+    }, {
+      "id": "2ec0453e-e288-45c3-96e6-22acba6e1d10",
+      "comment": "",
+      "command": "click",
+      "target": "name=NewPassword",
+      "targets": [
+        ["name=NewPassword", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='NewPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47531d58-41db-4021-ac3d-f008579fd0e7",
+      "comment": "",
+      "command": "type",
+      "target": "name=NewPassword",
+      "targets": [
+        ["name=NewPassword", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='NewPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Validpassword"
+    }, {
+      "id": "b86ff8ff-37e6-4b2c-ac5b-7338cfa4b3b8",
+      "comment": "",
+      "command": "type",
+      "target": "name=NewConfirmedPassword",
+      "targets": [
+        ["name=NewConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='NewConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Validpassword"
+    }, {
+      "id": "75638861-12b0-4701-b340-a2986b862dca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77711f21-3d9c-4430-86e2-49a796bb5133",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56285e73-b983-49e3-85a5-3a24cf97917b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(1) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .invalid-feedback", "css:finder"],
+        ["xpath=//form/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Incorrect current password')]", "xpath:innerText"]
+      ],
+      "value": "Incorrect current password"
+    }, {
+      "id": "e88edc65-3a53-41cb-b2a5-b19d5819bf79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d284e730-fd03-412e-a5c1-e51523084303",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your Password Must Contain At Least 1 Number!')]", "xpath:innerText"]
+      ],
+      "value": "Your Password Must Contain At Least 1 Number!"
+    }, {
+      "id": "cf35a4e7-78d1-42c4-8214-073c50bc9299",
+      "comment": "",
+      "command": "click",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddc08f99-40f7-4e97-9fed-6825990d8b57",
+      "comment": "",
+      "command": "type",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "479190a1-4832-46a3-8a6c-2240782a1f8a",
+      "comment": "",
+      "command": "type",
+      "target": "name=NewPassword",
+      "targets": [
+        ["name=NewPassword", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='NewPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "7e28f528-3471-4802-b7fd-bcc53d3495f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=NewConfirmedPassword",
+      "targets": [
+        ["name=NewConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='NewConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "2fcd6ed1-c484-4f52-bfab-539917ee45bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2273c33c-2c2d-4071-80ed-dc61dc4a3599",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cf3b9a3-f8dd-45b1-9e11-61cb901ac0c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[2]/span", "xpath:position"]
+      ],
+      "value": "Please enter a password that's different from your current password"
+    }, {
+      "id": "4bc1471f-243e-431f-a2d1-047c145b0214",
+      "comment": "",
+      "command": "click",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91540ef5-29af-4618-8c15-9a11a70de3b3",
+      "comment": "",
+      "command": "type",
+      "target": "name=CurrentPassword",
+      "targets": [
+        ["name=CurrentPassword", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='CurrentPassword']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Asdfasdf1"
+    }, {
+      "id": "e3ec57a1-d0a6-4234-aaf3-87be44601cbc",
+      "comment": "",
+      "command": "type",
+      "target": "name=NewPassword",
+      "targets": [
+        ["name=NewPassword", "name"],
+        ["css=.is-invalid", "css:finder"],
+        ["xpath=//input[@name='NewPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Huy712420"
+    }, {
+      "id": "a3672a94-92b5-4316-a90c-5552761188e5",
+      "comment": "",
+      "command": "type",
+      "target": "name=NewConfirmedPassword",
+      "targets": [
+        ["name=NewConfirmedPassword", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='NewConfirmedPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Huy712420"
+    }, {
+      "id": "866ba409-3594-4449-8444-d4ca60152d6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "847f1654-6248-47dd-8384-52b7a6070ce6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(4)", "css:finder"],
+        ["xpath=//tr[2]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'masteruser')]", "xpath:innerText"]
+      ],
+      "value": "masteruser"
+    }]
+  }, {
+    "id": "1ab3fcbd-991e-49a1-851d-66192ec6ec32",
+    "name": "Delete an admin",
+    "commands": [{
+      "id": "796b000d-5f99-42a7-aa2d-739fafebe2eb",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66b37c98-4644-47f3-88f6-dcdc9fd54eed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1394x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33519493-b7ba-490d-a2fd-45342769c64a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .fa-trash",
+      "targets": [
+        ["css=tr:nth-child(2) .fa-trash", "css:finder"],
+        ["xpath=//tr[2]/td[5]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac183466-99e1-4a42-9b49-22677811cd65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab0515c6-67ad-44b6-9de4-1dcaa65676fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=2SLGBTQ+ Project",
+      "targets": [
+        ["linkText=2SLGBTQ+ Project", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'2SLGBTQ+ Project')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'2SLGBTQ+ Project')]", "xpath:innerText"]
+      ],
+      "value": "2SLGBTQ+ Project"
+    }]
+  }, {
+    "id": "d6aca4f2-0c53-4350-b45d-90ffefdf3f49",
+    "name": "Add a new resource",
+    "commands": [{
+      "id": "e38d15e5-22c7-4aaa-aff7-a3fd42c4535a",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76d90ced-e117-46a3-af35-8432fe94a204",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1387x759",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "730cee5f-4030-486f-ac36-0b33ed9379f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Resources",
+      "targets": [
+        ["linkText=Resources", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Resources')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './resources_CRUD/index.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Resources')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b42041e-a8af-42ec-8ec7-3c173cf769e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Resources",
+      "targets": [
+        ["linkText=Add New Resources", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add New Resources')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'create.php')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Add New Resources')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c713446-31cf-440e-a38a-52cbc8c0e451",
+      "comment": "",
+      "command": "click",
+      "target": "name=ResourceName",
+      "targets": [
+        ["name=ResourceName", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ResourceName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad28dabd-2cf3-4c79-acab-f0b06b1ba07f",
+      "comment": "",
+      "command": "type",
+      "target": "name=ResourceName",
+      "targets": [
+        ["name=ResourceName", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ResourceName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Resource Test"
+    }, {
+      "id": "dc985222-b074-4854-ac66-25445f311c40",
+      "comment": "",
+      "command": "type",
+      "target": "name=Phone",
+      "targets": [
+        ["name=Phone", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Phone']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Phone Test"
+    }, {
+      "id": "21c7ec14-6265-4644-b500-683320e2fa3e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Text",
+      "targets": [
+        ["name=Text", "name"],
+        ["css=.form-group:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Text']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3398964-9c1b-4485-a19b-512dfef59af7",
+      "comment": "",
+      "command": "click",
+      "target": "name=SectionID",
+      "targets": [
+        ["name=SectionID", "name"],
+        ["css=.form-group:nth-child(10) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionID']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b252ae98-2dae-4f4f-876a-2c3f694e662f",
+      "comment": "",
+      "command": "type",
+      "target": "name=SectionID",
+      "targets": [
+        ["name=SectionID", "name"],
+        ["css=.form-group:nth-child(10) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionID']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "31f403ae-b17a-4a72-b886-13bbe436db70",
+      "comment": "",
+      "command": "click",
+      "target": "name=Description",
+      "targets": [
+        ["name=Description", "name"],
+        ["css=.form-group:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='Description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "777a1f41-3c97-47d7-8e8f-15442d51f1d1",
+      "comment": "",
+      "command": "type",
+      "target": "name=Description",
+      "targets": [
+        ["name=Description", "name"],
+        ["css=.form-group:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='Description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Resource Test Description"
+    }, {
+      "id": "08109bbe-14f1-419c-ac4e-57fb5cfa56d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8dd1a0e-a15b-4f31-a512-4366402af9d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5fcdda9-7060-4eb8-9279-56e366f4b27a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter a valid phone number.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter a valid phone number."
+    }, {
+      "id": "a309914b-253b-4349-a78f-c8f6456b0e9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93a91161-a4be-4593-b2bb-6a068e5c0a76",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(10) > .invalid-feedback",
+      "targets": [
+        ["css=.form-group:nth-child(10) > .invalid-feedback", "css:finder"],
+        ["xpath=//div[10]/span", "xpath:position"]
+      ],
+      "value": "This section ID is not present in the list of Sections. Here is a list current section ID's:\\n1: An alphabetical list of affirming community resources available to 2SLGBTQ+ children and youth (18 and under) based in Ottawa.\\n2: Mental Health Supports Description\\n3: Transition Supports Description\\nIf your section is not present in this list, please create a new section first!"
+    }, {
+      "id": "99abce31-115a-4a80-8514-99ccf184c502",
+      "comment": "",
+      "command": "click",
+      "target": "name=Phone",
+      "targets": [
+        ["name=Phone", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Phone']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dc5283e-6285-449d-bbea-5033d600ab35",
+      "comment": "",
+      "command": "type",
+      "target": "name=Phone",
+      "targets": [
+        ["name=Phone", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Phone']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123-123-1233"
+    }, {
+      "id": "d4ba10de-0c86-4f78-a192-0b8862f419e7",
+      "comment": "",
+      "command": "click",
+      "target": "name=SectionID",
+      "targets": [
+        ["name=SectionID", "name"],
+        ["css=.form-group:nth-child(10) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionID']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66b910fa-c08d-4107-96f2-99afcd78b8be",
+      "comment": "",
+      "command": "type",
+      "target": "name=SectionID",
+      "targets": [
+        ["name=SectionID", "name"],
+        ["css=.form-group:nth-child(10) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionID']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "fb76606b-2496-4126-9680-e745e4de9e47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4b8221-4893-4ace-9ab4-d874c548cef3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "621a0301-cde6-4bbb-a8a7-f0ac722af894",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(20) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(20) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[20]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Resource Test')]", "xpath:innerText"]
+      ],
+      "value": "Resource Test"
+    }]
+  }, {
+    "id": "2820e135-144c-41d1-9be6-1aed670de8b2",
+    "name": "Updates a resource",
+    "commands": [{
+      "id": "2dcbb983-02fd-4f24-9c09-6e8cd1b41251",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a2e3b82-148b-4541-b12d-b87531f3af4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1387x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21866586-0f4d-4975-85c1-7ef1b3afce1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Resources",
+      "targets": [
+        ["linkText=Resources", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Resources')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './resources_CRUD/index.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Resources')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16071169-9a35-40be-b36f-60d53daa855f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(20) .mr-3:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(20) .mr-3:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'update.php?id=20')]", "xpath:href"],
+        ["xpath=//tr[20]/td[6]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19781ca9-4326-48f5-aa7d-af84473f9ec1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(20) .mr-3:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(20) .mr-3:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'update.php?id=20')]", "xpath:href"],
+        ["xpath=//tr[20]/td[6]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6db68479-c54b-4b83-bd6f-f6757f291e28",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(20) .fa-pencil",
+      "targets": [
+        ["css=tr:nth-child(20) .fa-pencil", "css:finder"],
+        ["xpath=//tr[20]/td[6]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e757c72-bd19-48a8-b0a4-fcc9965a1bef",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(20) .fa-pencil",
+      "targets": [
+        ["css=tr:nth-child(20) .fa-pencil", "css:finder"],
+        ["xpath=//tr[20]/td[6]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e7fe417-90ba-4904-a35d-320e3b0ca822",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(20) .fa-pencil",
+      "targets": [
+        ["css=tr:nth-child(20) .fa-pencil", "css:finder"],
+        ["xpath=//tr[20]/td[6]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50a7364c-8ca5-4a42-a8ae-9694babd5cee",
+      "comment": "",
+      "command": "click",
+      "target": "name=Advocacy",
+      "targets": [
+        ["name=Advocacy", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Advocacy']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d846365-bc60-4b42-b4d0-3d350e4bb880",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f34dd027-0c95-4bd3-995e-28f82f48a550",
+      "comment": "",
+      "command": "type",
+      "target": "name=Advocacy",
+      "targets": [
+        ["name=Advocacy", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Advocacy']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "test123@advocacy.com"
+    }, {
+      "id": "7aae738e-9b50-4a90-9073-9b13bd72548c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e4f7335-ce9e-4f78-b75a-6700d0740127",
+      "comment": "",
+      "command": "type",
+      "target": "name=Phone",
+      "targets": [
+        ["name=Phone", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Phone']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "999-999-9999"
+    }, {
+      "id": "38642239-f45d-4b43-9aab-3f567a2f7415",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4662aeb-37f7-4666-a2e4-6cfbedeb52d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(20) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(20) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[20]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'999-999-9999')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "125c0bae-f831-4e56-a8e9-2017dcf69dca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(20) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(20) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[20]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'999-999-9999')]", "xpath:innerText"]
+      ],
+      "value": "999-999-9999"
+    }]
+  }, {
+    "id": "df06dacb-9b41-4fef-b450-ab8c9628d91a",
+    "name": "Deletes a resource",
+    "commands": [{
+      "id": "738f9d3c-c1d8-4766-8ae8-7b51f5c25606",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "511e7bc2-2fdc-4993-8a7c-00642a89b52e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1389x755",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9adb51d4-3045-4b77-a70c-2e65fc5ae0a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Resources",
+      "targets": [
+        ["linkText=Resources", "linkText"],
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Resources')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './resources_CRUD/index.php')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Resources')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ebb714-a5a4-4c8b-b40d-0248d28059c6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(20) .fa-pencil",
+      "targets": [
+        ["css=tr:nth-child(20) .fa-pencil", "css:finder"],
+        ["xpath=//tr[20]/td[6]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c0ed4ee-741c-42b8-a5a1-fd54a7fa3228",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(20) .fa-pencil",
+      "targets": [
+        ["css=tr:nth-child(20) .fa-pencil", "css:finder"],
+        ["xpath=//tr[20]/td[6]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3981ffbf-fe64-47c8-b60f-bedd0fcbfbad",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(20) a:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(20) a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(@href, 'delete.php?id=20')]", "xpath:href"],
+        ["xpath=//tr[20]/td[6]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f705c3f6-e2a8-409f-b256-4f1991ef7b06",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(20) a:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(20) a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(@href, 'delete.php?id=20')]", "xpath:href"],
+        ["xpath=//tr[20]/td[6]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b26a788-9ca2-4606-a610-217f3482cd02",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(20) .fa-trash",
+      "targets": [
+        ["css=tr:nth-child(20) .fa-trash", "css:finder"],
+        ["xpath=//tr[20]/td[6]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "484a101f-319d-403d-84e6-282c8f4d993b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cb11f22-dfa5-44c8-9dad-17a5936d909c",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=2SLGBTQ+ Project",
+      "targets": [
+        ["linkText=2SLGBTQ+ Project", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'2SLGBTQ+ Project')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'2SLGBTQ+ Project')]", "xpath:innerText"]
+      ],
+      "value": "2SLGBTQ+ Project"
+    }]
+  }, {
+    "id": "9f4ae6d2-7587-47ff-98b6-7e6a18ac346f",
+    "name": "Add a new section",
+    "commands": [{
+      "id": "5800ed35-e1a8-4ca7-a737-14784809799a",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbc41dea-6c37-4eb0-af63-496385d365c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1392x758",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1d0fa1f-0d0a-4ea7-a36c-bfef07c68d4f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sections",
+      "targets": [
+        ["linkText=Sections", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sections')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './sections_CRUD/index.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sections')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdcb6ca6-726d-4fff-bb0a-5a72ebca5ae3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add New Sections",
+      "targets": [
+        ["linkText=Add New Sections", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add New Sections')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'create.php')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Add New Sections')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5176a0c1-d614-4a20-82f4-289ad2f528f7",
+      "comment": "",
+      "command": "click",
+      "target": "name=SectionName",
+      "targets": [
+        ["name=SectionName", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1c4bce2-347a-4f7a-9aeb-e9d289867e6c",
+      "comment": "",
+      "command": "type",
+      "target": "name=SectionName",
+      "targets": [
+        ["name=SectionName", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test Name"
+    }, {
+      "id": "4cb66eb9-dce1-455a-8a20-93f73320a748",
+      "comment": "",
+      "command": "click",
+      "target": "name=Description",
+      "targets": [
+        ["name=Description", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='Description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9831464-68a1-48f8-8afa-c616ee76150f",
+      "comment": "",
+      "command": "type",
+      "target": "name=Description",
+      "targets": [
+        ["name=Description", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='Description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test "
+    }, {
+      "id": "a34365c5-bb5d-4d3f-bc01-af7e8dca0c07",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "705f0c4e-48c5-48a4-8f4d-18f71054b5b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "add3ba02-ce57-40b1-ab09-fa10d8511913",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Test Name')]", "xpath:innerText"]
+      ],
+      "value": "Test Name"
+    }]
+  }, {
+    "id": "4e362fe5-2aed-4a83-9961-97c99255236e",
+    "name": "Updates a section",
+    "commands": [{
+      "id": "6b8f8120-1df8-4e61-980f-ed2b2a107c80",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94e0b435-330a-421c-8d4d-7d603385144c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1392x759",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db057022-94d6-445e-9ca5-7be355099c55",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sections",
+      "targets": [
+        ["linkText=Sections", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sections')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './sections_CRUD/index.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sections')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ac47576-120d-4f31-b59c-c32021f543ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .fa-pencil",
+      "targets": [
+        ["css=tr:nth-child(4) .fa-pencil", "css:finder"],
+        ["xpath=//tr[4]/td[4]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d29a739-5f13-47c6-9065-78e1dbcaa25b",
+      "comment": "",
+      "command": "type",
+      "target": "name=SectionName",
+      "targets": [
+        ["name=SectionName", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='SectionName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test Update Name"
+    }, {
+      "id": "f3720828-d4fd-4be4-a0cc-5a18032968f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cda9730-fca8-492d-8289-4ccc625574b1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Test Update Name')]", "xpath:innerText"]
+      ],
+      "value": "Test Update Name"
+    }]
+  }, {
+    "id": "6449aa73-8124-4f0b-8137-221b82bd673a",
+    "name": "Deletes a section",
+    "commands": [{
+      "id": "11d561bd-c3fd-49d4-9d45-9d5b8de41dd1",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a49c9c4-4615-4fb7-979e-899fd3222129",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1392x758",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85766943-24ec-44f3-bcb7-f3d3c4e88f3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sections",
+      "targets": [
+        ["linkText=Sections", "linkText"],
+        ["css=.nav-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sections')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavAltMarkup']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './sections_CRUD/index.php')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sections')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49134f60-e5c3-4787-af14-5adae8afa53a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .fa-trash",
+      "targets": [
+        ["css=tr:nth-child(4) .fa-trash", "css:finder"],
+        ["xpath=//tr[4]/td[4]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bec785b-d78d-4f5f-938d-9e6fcb6586fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Yes']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "622f6e24-c08d-4f36-8aa8-1e7892e850cb",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=2SLGBTQ+ Project",
+      "targets": [
+        ["linkText=2SLGBTQ+ Project", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'2SLGBTQ+ Project')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'2SLGBTQ+ Project')]", "xpath:innerText"]
+      ],
+      "value": "2SLGBTQ+ Project"
+    }]
+  }, {
+    "id": "04634003-ebff-4219-8617-054c9aac6f7a",
+    "name": "Logout Test",
+    "commands": [{
+      "id": "954f6c78-3d1b-4f74-aeb2-ba41bd7837ea",
+      "comment": "",
+      "command": "open",
+      "target": "http://booleanautocrats.epizy.com/backend/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "130a86a8-2703-4d85-b020-a18baf664614",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1398x765",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5500b966-6cf4-401c-95eb-c7e3cc4bab2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "432432d4-d3f7-4646-a32c-36a2bb161f0f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }]
+  }, {
+    "id": "79fa4b8b-2276-4bc2-947c-6fa541dea2a5",
+    "name": "Unauthorized access 1",
+    "commands": [{
+      "id": "f85ffe25-f7c4-4758-afc0-ba812a4966ee",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31905e9e-c59b-4405-9741-8a14a9936061",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89916719-a0d3-4106-be8d-06387c7220c5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }]
+  }],
+  "suites": [{
+    "id": "d034a9a7-c5cc-40fa-bba1-33a278275287",
+    "name": "Footer",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2d2db041-a32a-4a6c-b3d5-a9f4c281096c", "1fb64ec4-27e1-48d0-8cc9-650717b24a1f", "625a101c-2df8-41eb-9c93-a6c9c27134e9"]
+  }, {
+    "id": "22f39a2d-8874-403b-94ac-9ae32556aeb1",
+    "name": "Links",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c7c6b6d0-18db-4022-8e2c-6b67fd083341", "e24b4a01-f3ec-4443-8dac-7d4216c18559"]
+  }, {
+    "id": "b2b86225-729a-45e4-b49b-98fec0dda4bd",
+    "name": "See More Buttons",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eaeb320c-2339-4063-938a-6af129eb834d", "7f72d0d5-d6bb-4fcd-9d85-62065aae039e", "b08b0904-b0b4-4a72-a713-29b692a987b9"]
+  }, {
+    "id": "fd7d8def-f7d6-4eac-856b-5e06138d9f5d",
+    "name": "Menu bar",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["48af91ba-462f-4d61-a3e2-eed49c83f642", "aa8d7f71-9fb9-4d27-bc96-7a59be4c0d22", "26cce41e-4c38-4ade-9e35-a14c95ca4104", "eb3b0cf7-cfa0-44cf-9fb2-a329f09bcc84", "93468dfd-a7a0-476e-b2d8-b01baa55ee8a", "d3db97d2-ccb6-400b-a48e-d95ba7297fd6", "d7097b40-3724-4427-a329-b298ca48e280", "33c97ed1-1fc9-42c7-b5c1-3e502cd8948c", "64621bb7-fd57-4253-9e85-c89bad34f42e", "58c027d6-861b-4b76-b2c9-69c2ba9c0afd", "9c1df76d-520f-4989-a4b4-4843864b3838", "cbe0efc4-3b2b-4adc-919e-f83276c965d2"]
+  }, {
+    "id": "6f5e4c64-1ba4-4733-b893-1556cf1e85e6",
+    "name": "Admin Login",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8196f194-7841-48bf-be75-246fb56c34ba", "41cb1d8c-5278-4961-bf5c-61b3169d1c53", "beb5d530-60c3-46d6-8b5d-d09f6fc58f24", "1ab3fcbd-991e-49a1-851d-66192ec6ec32"]
+  }, {
+    "id": "00a3bd54-3e96-460a-a8ef-9c2e72b33d89",
+    "name": "Resources",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d6aca4f2-0c53-4350-b45d-90ffefdf3f49", "2820e135-144c-41d1-9be6-1aed670de8b2", "df06dacb-9b41-4fef-b450-ab8c9628d91a"]
+  }, {
+    "id": "cada878e-7788-44d5-b19f-d8b314134ea4",
+    "name": "Sections",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9f4ae6d2-7587-47ff-98b6-7e6a18ac346f", "4e362fe5-2aed-4a83-9961-97c99255236e", "6449aa73-8124-4f0b-8137-221b82bd673a"]
+  }, {
+    "id": "a599851b-f372-4b89-bf5a-5ae60064bbfe",
+    "name": "Admin Logout",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["04634003-ebff-4219-8617-054c9aac6f7a"]
+  }, {
+    "id": "9e94d502-92b8-42ff-b4b2-953a78d8d290",
+    "name": "Unauthorized Tests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["79fa4b8b-2276-4bc2-947c-6fa541dea2a5"]
+  }],
+  "urls": ["http://booleanautocrats.epizy.com/?i=2", "http://booleanautocrats.epizy.com/backend/index.php"],
+  "plugins": []
+}

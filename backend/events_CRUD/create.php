@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Tom: Validate Event Date
+    // Validate Event Date
     $input_description = trim($_POST["EventDate"]);
     if (empty($input_description)) {
         $EventDate_err = "Please enter a valid date.";
@@ -78,7 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    // Tom: Check input errors before inserting in database
+
+    // Check input errors before inserting in database
     if (empty($EventName_err) && empty($EventDescription_err) && empty($EventDate_err) && empty($EventImage_err)) {
         // Prepare an insert statement
         $sql = "INSERT INTO Events (EventName, EventDescription, EventImage, EventDate) VALUES (?, ?, ?, ?)";
