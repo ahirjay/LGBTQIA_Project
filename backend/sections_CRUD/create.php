@@ -20,14 +20,14 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
 require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
-// Tom: changed iniaial variables and error
+// changed iniaial variables and error
 $SectionName = $SectionDescription = "";
 $SectionName_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Tom: Validate name
+    // Validate name
     $input_name = trim($_POST["SectionName"]);
     if (empty($input_name)) {
         $SectionName_err = "Please enter the section name.";
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $SectionName = $input_name;
     }
 
-    // Tom: Validate Description
+    // Validate Description
     $input_description = trim($_POST["Description"]);
     if (empty($input_description)) {
         $Description_err = "Please enter some Description.";
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Description = $input_description;
     }
 
-    // Tom: Check input errors before inserting in database
+    // Check input errors before inserting in database
     if (empty($SectionName_err) && empty($Description_err)) {
         // Prepare an insert statement
         $sql = "INSERT INTO Sections (SectionName, SectionDescription) VALUES (?, ?)";

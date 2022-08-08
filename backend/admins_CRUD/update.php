@@ -21,7 +21,7 @@ require_once "../shared/config.php";
 require_once "../shared/password.php";
 
 // Define variables and initialize with empty values
-// Tom: changed iniaial variables and error
+// changed iniaial variables and error
 $CurrentPassword = $NewPassword = $NewConfirmedPassword = "";
 $CurrentPassword_err = $NewPassword_err = $NewConfirmedPassword_err = "";
 
@@ -61,7 +61,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         mysqli_stmt_close($stmt);
     }
 
-    //Huy: Validate current password
+    //Validate current password
     $input = trim($_POST["CurrentPassword"]);
     if (empty($input)) {
         $CurrentPassword_err = "Please enter the current password to authorize.";
@@ -71,7 +71,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $CurrentPassword = $input;
     }
 
-    // Huy: Validate new password
+    // Validate new password
     $input_new_password = trim($_POST["NewPassword"]);
     if (empty($input_new_password)) {
         $NewPassword_err = "Please enter the new password";
@@ -89,7 +89,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $NewPassword = $input_new_password;
     }
 
-    // Huy: Validate new confirmed password
+    // Validate new confirmed password
     $input_new_confirmed_password = trim($_POST["NewConfirmedPassword"]);
     if (!empty($NewPassword)) {
         if (empty($input_new_confirmed_password)) {

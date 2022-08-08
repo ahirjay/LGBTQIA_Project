@@ -20,7 +20,7 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
 require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
-// Tom: changed iniaial variables and error
+// changed iniaial variables and error
 $ResourceName = $Phone = $Email = $Website = $Advocacy = $Outreach = $CommunityCare = $Text = $Description = $SectionID = "";
 $ResourceName_err = $PhoneNumber_err = $Email_err = $Website_err = $Advocacy_err = $Outreach_err = $CommunityCare_err = $TextLine_err = $Description_err = $SectionID_err = "";
 
@@ -32,7 +32,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     // Get hidden input value
     $id = $_POST["id"];
 
-    // Tom: Validate name
+    // Validate name
     $input_name = trim($_POST["ResourceName"]);
     if (empty($input_name)) {
         $ResourceName_err = "Please enter the resources name.";
@@ -46,7 +46,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $ResourceName = $input_name;
     }
 
-    // Tom: Validate phone
+    // Validate phone
     $input_phone = trim($_POST["Phone"]);
     $regex = "/(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}( ext. d{3,4})?/";
     if (empty($input_phone)) {
@@ -57,7 +57,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Phone = $input_phone;
     }
 
-    // Tom: Validate email
+    // Validate email
     $input_email = trim($_POST["Email"]);
     if (empty($input_email)) {
         // $Email_err = "Please enter an email.";
@@ -66,7 +66,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Email = $input_email;
     }
 
-    // Tom: Validate name
+    // Validate name
     $input_web = trim($_POST["Website"]);
     if (empty($input_name)) {
         $Website_err = NULL;
@@ -74,7 +74,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Website = $input_web;
     }
 
-    // Tom: Validate Advocacy
+    // Validate Advocacy
     $input_advocacy = trim($_POST["Advocacy"]);
     if (empty($input_advocacy)) {
         // $Advocacy_err = "Please enter an Advocacy.";
@@ -83,7 +83,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Advocacy = $input_advocacy;
     }
 
-    // Tom: Validate Outreach
+    // Validate Outreach
     $input_outreach = trim($_POST["Outreach"]);
     if (empty($input_outreach)) {
         // $Outreach_err = "Please enter an Outreach.";
@@ -92,7 +92,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Outreach = $input_outreach;
     }
 
-    // Tom: Validate CommunityCare
+    // Validate CommunityCare
     $input_communitycare = trim($_POST["CommunityCare"]);
     if (empty($input_communitycare)) {
         // $CommunityCare_err = "Please enter CommunityCare.";
@@ -101,7 +101,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $CommunityCare = $input_communitycare;
     }
 
-    // Tom: Validate TextLine
+    // Validate TextLine
     $input_textline = trim($_POST["Text"]);
     $regex = "/(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}( ext. d{3,4})?/";
     if (empty($input_textline)) {
@@ -112,7 +112,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Text = $input_textline;
     }
 
-    // Tom: Validate Description
+    // Validate Description
     $input_description = trim($_POST["Description"]);
     if (empty($input_description)) {
         $Description_err = "Please enter some Description.";
@@ -121,7 +121,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $Description = $input_description;
     }
 
-    // Tom: Validate SectionID
+    // Validate SectionID
     $input_sectionID = trim($_POST["SectionID"]);
     $sql = "SELECT * FROM Sections";
     $stmt = mysqli_prepare($link, $sql);

@@ -60,7 +60,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
 
 
 
-    // Huy: Uploading variables
+    // Uploading variables
     $targetDir = "../../assets/images/";
     $fileName = $targetFilePath = $allowTypes = "";
 
@@ -74,7 +74,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $targetFilePath = $targetDir . $newfilename;
         $fileType = strtolower(end($temp));
         $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
-        //Huy: Handling Image Uploading
+        //Handling Image Uploading
         if (!in_array($fileType, $allowTypes)) {
             $EventImage_err = "Please choose a valid file (only JPG, JPEG, PNG, GIF, & PDF files are accepted.";
         }

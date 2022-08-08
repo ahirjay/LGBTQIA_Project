@@ -79,7 +79,7 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
                     if (mysqli_num_rows($result) > 0) {
                         echo '<table class="table table-bordered table-striped">';
                         echo "<thead>";
-                        echo "<tr>"; // Tom: changed field, for more check for Resources Table
+                        echo "<tr>"; // changed field, for more check for Resources Table
                         echo "<th>ID</th>";
                         echo "<th>Name</th>";
                         echo "<th>Phone</th>";
@@ -89,7 +89,7 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
                         echo "</thead>";
                         echo "<tbody>";
                         while ($row = mysqli_fetch_array($result)) {
-                            echo "<tr>"; // Tom: changed rows label, for more check for Resources Table
+                            echo "<tr>"; // changed rows label, for more check for Resources Table
                             echo "<td>" . $row['ResourceID'] . "</td>";
                             echo "<td>" . $row['ResourceName'] . "</td>";
                             echo "<td>" . $row['Phone'] . "</td>";

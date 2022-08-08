@@ -110,7 +110,7 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
                             <b><?php echo $row["ResourceName"]; ?></b>
                         </p>
                     </div>
-                    <?php //Tom: check for NULL values for fows, if NULL, don't display the rows.
+                    <?php //check for NULL values for fows, if NULL, don't display the rows.
                     if ($row["Phone"] != null) {
                         echo '<div class="form-group">';
                         echo '<label>Phone</label>';

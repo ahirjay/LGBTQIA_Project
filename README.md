@@ -1,3 +1,6 @@
+# Documentation
+Since this is a simple fetching and showing data web project, all of the major operations are create, read, update, and delete. We have 4 pages in the admin side that serve those operations, including admins, resources, events and sections. Please see each page for more details.
+
 # LGBTQIA+ Project Plan
 ## Definition
 LGBTQ website is going to allow LGBTQ community members to easily access local trans, gay friendly resources, services, upcoming events, and contract details of all the LGBTQ friendly organizations around the Ottawa area. The Website will allow community members to have access to all the resources at one place.	

@@ -20,14 +20,14 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
 require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
-// Tom: changed iniaial variables and error
+// changed iniaial variables and error
 $ResourceName = $Phone = $Email = $Website = $Advocacy = $Outreach = $CommunityCare = $Text = $Description = $SectionID = "";
 $ResourceName_err = $PhoneNumber_err = $Email_err = $Website_err = $Advocacy_err = $Outreach_err = $CommunityCare_err = $TextLine_err = $Description_err = $SectionID_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Tom: Validate name
+    // Validate name
     $input_name = trim($_POST["ResourceName"]);
     if (empty($input_name)) {
         $ResourceName_err = "Please enter the resources name.";
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $ResourceName = $input_name;
     }
 
-    // Tom: Validate phone
+    // Validate phone
     $input_phone = trim($_POST["Phone"]);
     $regex = "/(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}( ext. d{3,4})?/";
     if (empty($input_phone)) {
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Phone = $input_phone;
     }
 
-    // Tom: Validate email
+    // Validate email
     $input_email = trim($_POST["Email"]);
     if (empty($input_email)) {
         // $Email_err = "Please enter an email.";
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Email = $input_email;
     }
 
-    // Tom: Validate name
+    // Validate name
     $input_web = trim($_POST["Website"]);
     if (empty($input_name)) {
         $Website_err = NULL;
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Website = $input_web;
     }
 
-    // Tom: Validate Advocacy
+    // Validate Advocacy
     $input_advocacy = trim($_POST["Advocacy"]);
     if (empty($input_advocacy)) {
         // $Advocacy_err = "Please enter an Advocacy.";
@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Advocacy = $input_advocacy;
     }
 
-    // Tom: Validate Outreach
+    // Validate Outreach
     $input_outreach = trim($_POST["Outreach"]);
     if (empty($input_outreach)) {
         // $Outreach_err = "Please enter an Outreach.";
@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Outreach = $input_outreach;
     }
 
-    // Tom: Validate CommunityCare
+    // Validate CommunityCare
     $input_communitycare = trim($_POST["CommunityCare"]);
     if (empty($input_communitycare)) {
         // $CommunityCare_err = "Please enter CommunityCare.";
@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Text = $input_textline;
     }
 
-    // Tom: Validate Description
+    // Validate Description
     $input_description = trim($_POST["Description"]);
     if (empty($input_description)) {
         $Description_err = "Please enter some Description.";
@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Description = $input_description;
     }
 
-    // Tom: Validate SectionID
+    // Validate SectionID
     $input_sectionID = trim($_POST["SectionID"]);
     $sql = "SELECT * FROM Sections";
     $stmt = mysqli_prepare($link, $sql);
@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $SectionID = $input_sectionID;
     }
 
-    // Tom: Check input errors before inserting in database
+    // Check input errors before inserting in database
     if (empty($ResourceName_err) && empty($SectionID_err) && empty($PhoneNumber_err) && empty($Email_err) && empty($Website_err) && empty($Advocacy_err) && empty($Outreach_err) && empty($CommunityCare_err) && empty($TextLine_err) && empty($Description_err)) {
         // Prepare an insert statement
         $sql = "INSERT INTO Resources  (ResourceName, Phone, Email, Website, Advocacy, Outreach, CommunityCare, Text, Description, SectionID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

@@ -21,14 +21,14 @@ if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] == false) {
 require_once "../shared/config.php";
 
 // Define variables and initialize with empty values
-// Tom: changed iniaial variables and error
+// changed iniaial variables and error
 $EventName = $EventDescription = $EventDate = $EventImage = "";
 $EventName_err = $EventDescription_err = $EventImage_err = $EventDate_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Tom: Validate name
+    // Validate name
     $input_name = trim($_POST["EventName"]);
     if (empty($input_name)) {
         $EventName_err = "Please enter the section name.";
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $EventName = $input_name;
     }
 
-    // Tom: Validate EventDescription
+    // Validate EventDescription
     $input_description = trim($_POST["EventDescription"]);
     if (empty($input_description)) {
         $Description_err = "Please enter some EventDescription.";
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $EventDescription = $input_description;
     }
 
-    // Huy: Uploading variables
+    // Uploading variables
     $targetDir = "../../assets/images/";
     $fileName = $targetFilePath = $allowTypes = "";
 
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $targetFilePath = $targetDir . $newfilename;
         $fileType = strtolower(end($temp));
         $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
-        //Huy: Handling Image Uploading
+        //Handling Image Uploading
         if (!in_array($fileType, $allowTypes)) {
             $EventImage_err = "Please choose a valid file (only JPG, JPEG, PNG, GIF, & PDF files are accepted.";
         }
