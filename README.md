@@ -1,3 +1,6 @@
+# Documentation
+Since this is a simple fetching and showing data web project, all of the major operations are create, read, update, and delete. We have 4 pages in the admin side that serve those operations, including admins, resources, events and sections. Please see each page for more details.
+
 # LGBTQIA+ Project Plan
 ## Definition
 LGBTQ website is going to allow LGBTQ community members to easily access local trans, gay friendly resources, services, upcoming events, and contract details of all the LGBTQ friendly organizations around the Ottawa area. The Website will allow community members to have access to all the resources at one place.	
@@ -18,7 +21,7 @@ LGBTQ website is going to allow LGBTQ community members to easily access local t
 - As an administrator, I want to have a search bar in organization RUD pages, so that I can read, update, or delete the organization based on the search result.
 
 ### Scope 
-The goal is to help users get better knowledge about LGBTQIA+ and promote the development of diverse communities. Basically, the user can retrieve the massive information about LBGTQIA+ and the organisation contacts for the knowledge development. The targeting group of users for this project will be the users in Ottawa only. Although people from all over the Internet can access our website, we will contain the information of LGBT organizations in just Ottawa. Besides, our project will not be available on mobile platforms like iOS and Android. It is just fully PC based website. Boolean Autocrats will also cease development on LGBTQIA+ application in September 2022.
+The goal is to help users get better knowledge about LGBTQIA+ and promote the development of diverse communities. Basically, the user can retrieve the massive information about LBGTQIA+ and the organisation contacts for the knowledge development. The targeting group of users for this project will be the users in Ottawa only. Although people from all over the Internet can access our website, we will contain the information of LGBT organizations in just Ottawa. Besides, our project will not be developed as mobile applications. However, mobile users can still view our website using their mobile device browswers. Boolean Autocrats will also cease development on LGBTQIA+ application in September 2022.
 
 ### Specifications 
 People from all over the internet will be able to access the website publicly but the information will be contained for the Ottawa region only.
